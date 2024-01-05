@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hutter's Cleaning</title>
+
+    <!-- FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/abe66973be.js" crossorigin="anonymous"></script>
+    
+    <!-- IMPORTAR ICONES DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- USO DO CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- USO DO JAVASCRIPT -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>    
+        <div class="interface">
+
+            <div class="menu_logo">
+                
+                <a href="#">
+                    <img class="logo_foto_hutter" src="assets/logo.png" alt="foto_logo">
+                </a>
+                    
+            </div> <!--fim menu_logo-->
+            
+            <nav class="menu_navegacao">
+                <div class="close-button">✖</div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#quote">Request a Quote</a></li>
+                    <li><a href="#Appointments">Appointments</a></li>
+                    <!--<li><a href="#contact">Contact Us</a></li>-->
+                </ul>
+            </nav>
+            
+
+            <div class="menu-hamburger">☰
+
+            </div> <!--Menu_hamburguer-->
+        </div> <!--fim interface menu-->
+
+    </header>
+
+    <main>
+
+        <section id="home" class="module imagem1">
+            <h1>Hutter Cleaning Service</h1>
+        </section> <!--FIM SECTION IMAGEM 1-->
+
+        <section id="about" class="sobre_empresa">
+            <div class="interface">
+                <div class="container sobre_empresa">
+
+                    <h1>ABOUT US</h1>
+
+                    
+                    <p> <i class="bi bi-1-circle"></i> Expert Cleaning Services for Kirkland and Nearby Areas
+                        Let us take care of tidying up your home, apartment, or office while you focus on what's important to you.</p>
+                        
+                    <p> <i class="bi bi-2-circle"></i> Our professional team ensures a spotless and organized space, giving you peace of mind and more time to enjoy your day.</p>
+                    
+                    <p> <i class="bi bi-3-circle"></i> At Hutter Cleaning, we bring a personal touch to home cleaning.</p>
+                        
+                    <p> <i class="bi bi-4-circle"></i> Managed by a dedicated couple, we transform your living spaces into serene havens.</p>
+                            
+                        <h2>Trust us for a home that's not just clean, <br>
+                            but a joy to live in.</h2>
+                    
+                    <a href="tel:+4259849284"><button class="btn_contact">CONTACT US</button></a>
+                    <a href="#quote"><button class="btn_quote">REQUEST YOUR QUOTE</button></a>
+                </div> <!--FIM CONTAINER-->
+            </div> <!--FIM INTERFACE-->
+        </section> <!--FIM SECTION SOBRE EMPRESA-->
+
+        <section class="module imagem2">
+            <h1>Services</h1>
+        </section> <!--FIM SECTION IMAGEM 2-->
+
+        <section id="services" class="nossos_servicos">
+
+            <h2 class="titulo"> <span>A CLEAN</span> FOR EVERY NEED</h2>
+
+            <div class="interface"> 
+                
+                <div class="container servicos">
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-1-circle"></i>
+                        <h3>Regular Cleaning </h3>
+                        <p>Tailored to your family’s needs, our regular cleaning service keeps your home consistently fresh and welcoming.</p>
+                    </div> <!--FIM SERVICOS_BOXS 1-->
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-2-circle"></i>
+                        <h3>Deep Cleaning</h3>
+                        <p>Our comprehensive deep cleaning approach extends beyond commonly-touched surfaces to lesser-used areas and hard-to-reach spots.</p>
+                        
+                    </div> <!--FIM SERVICOS_BOXS 2-->
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-3-circle"></i>
+                        <h3>Move-In & Move-Out</h3>
+                        <p>Make your move smoother with Hutter Cleaning. We provide thorough cleaning for homes, apartments, and condos during move-ins and move-outs.</p>
+
+                    </div> <!--FIM SERVICOS_BOXS 3-->
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-4-circle"></i>
+                        <h3>Commercial</h3>
+                        <p>Ideal for property owners and hosts. Set your cleaning needs on autopilot with Hutter Cleaning.</p>
+
+                    </div> <!--FIM SERVICOS_BOXS 4-->
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-5-circle"></i>
+                        <h3>Vacation Home</h3>
+                        <p>Recognizing cleanliness as a top priority for travelers, we use a 4-step rental cleaning checklist to ensure a thorough clean, readying your vacation rental for new guests.</p>
+
+                    </div> <!--FIM SERVICOS_BOXS 5-->
+
+                    <div class="servicos_boxs">
+                        <i class="bi bi-6-circle"></i>
+                        <h3>Event</h3>
+                        <p>Hosting an event is tiring enough – let us handle the cleanup. We’ll make sure your space is spotless for your next party or event.</p>
+
+
+                    </div> <!--FIM SERVICOS_BOXS 6-->
+                </div> <!--FIM CONTAINER-->
+            </div> <!--FIM INTERFACE-->
+
+            <div>
+                <a href="tel:+4259849284"><button class="btn_contact">CONTACT US</button></a>
+                <a href="#quote"><button class="btn_quote">REQUEST YOUR QUOTE</button></a>
+
+            </div> <!--FIM BOTÕES-->
+        </section> <!--FIM SECTION NOSSOS SERVIÇOS-->
+
+        <section class="module imagem3">
+            <h1>Request a Quote</h1>
+        </section> <!--FIM SECTION IMAGEM 3-->
+
+        <section id="quote" class="orcamentos">
+            
+          <div class="container orcamentos">
+            
+            <h1 class="titulo orcamento"><span>REQUEST</span> YOUR QUOTE</h1>
+            
+            <div class="flex">
+                <div class="text_leads">
+                    
+                    <h3>Fill Out the Quote Request Form</h3>
+                        <p>Get Started: Begin your journey to a cleaner space! The form is just to the right →. Fill it out to take the first step.</p>
+
+
+                    <h3>Await Confirmation</h3>
+                        <p>Stay Informed: After you submit, we'll quickly confirm receipt and keep you updated.</p>
+                
+
+                    <h3>On-Site Customized Assessment</h3>
+                        <p>Tailored Experience: Expect a visit from our experts for a personalized assessment at your location.</p>
+
+
+                    <h4> Don't Miss This Opportunity! </h4>
+                        <p>At Hutter Cleaning, we pride ourselves on unparalleled quality and exceptional services. Seize this chance to experience the difference that sets us apart. </p>
+                        
+                    
+                </div> <!--FIM TEXT LEADS-->
+                
+                <form name="formulario_orcamento" method="post" netlify>
+                    <div class="form first orcamentos">
+                        <div class="details person orcamentos">
+                        
+                            <div class="fields orcamentos">
+                                <div class="input_fields orcamentos">
+
+                                    <label>First name</label>
+                                    <input name="first_name" type="name" placeholder="Enter your firts name" required>
+
+                                </div> <!--FIM INPUT_FIELDS NOME-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>Last name</label>
+                                    <input name="last_name" type="text" placeholder="Enter your last name">
+
+                                </div> <!--FIM INPUT_FIELDS SOBRENOME-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>E-mail</label>
+                                    <input name="email" type="email" placeholder="Enter your e-mail">
+
+                                </div> <!--FIM INPUT_FIELDS EMAIL-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>Phone number</label>
+                                    <input name="phone" type="number" placeholder="Enter your phone" required>
+
+                                </div> <!--FIM INPUT_FIELDS TELEFONE-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>ZIP Code</label>
+                                    <input name="zipcode" type="number" placeholder="Enter your ZipCode" required>
+
+                                </div> <!--FIM INPUT_FIELDS ZIP-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>Address</label>
+                                    <input name="address" type="text" placeholder="Enter your address">
+
+                                </div> <!--FIM INPUT_FIELDS ENDEREÇO-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>Square feet of your property</label>
+                                    <input name="square" type="text" placeholder="Type here">
+                                </div> <!--FIM SQUARE FEET-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>How many rooms?</label>
+                                    <input name="quantidade_comodos" type="text" placeholder="Type here">
+                                </div> <!--FIM QUANTIDADE DE COMODOS-->
+
+                                <div class="input_fields orcamentos">
+
+                                    <label>Do you need any additional services?</label>
+                                    <input name="adicional_informacoes" type="text" placeholder="Describe here" required>
+                                </div> <!--FIM ADICIONAL INFORMACOES-->
+                                
+                                
+                            
+                                <div class="input_box_selecoes">
+                                <div class="input_fields orcamentos">
+                                    <div class="input_box servicos_opcoes">
+                                        <label for="cleaningType"></label>
+                                            <select name="cleaningType" id="cleaningType">
+                                                <option value="" disabled selected>What kind of cleaning?</option>
+                                                <option value="regular">Regular Cleaning</option>
+                                                <option value="deep">Deep Cleaning</option>
+                                                <option value="move">Move in & Move Out</option>
+                                                <option value="commercial">Commercial Cleaning</option>
+                                                <option value="vacation">Vacation Home Cleaning</option>
+                                                <option value="event">Event Cleaning</option>
+                                            </select>
+                                    </div> <!--FIM INPUT_BOX-->
+                                </div> <!--FIM INPUT_FIELDS OPÇÕES SERVIÇOS-->
+
+                                <div class="input_fields orcamentos">
+                                    <div class="input_box frequencia">
+                                        <label for="cleaningFrequency"></label>
+                                            <select name="cleaningFrequency" id="cleaningFrequency">
+                                                <option value="" disabled selected>How often?</option>
+                                                <option value="once">Only Once</option>
+                                                <option value="weekly">Weekly</option>
+                                                <option value="biweekly">Every two weeks</option>
+                                                <option value="monthly">Once a month</option>
+                                            </select>
+                                    </div> <!--FIM INPUT BOX FREQUENCIA-->
+                                </div> <!--FIM INPUT FIELDS FREQUENCIA-->
+
+                                <div class="input_fields orcamentos">
+                                    <div class="input_box pets">
+                                        <label for="pets"></label>
+                                            <select name="pets" id="pets">
+                                                <option value="" disabled selected>Do you have pets</option>
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                    </div> <!--FIM INPUT BOX FREQUENCIA-->
+                                </div> <!--FIM INPUT FIELDS FREQUENCIA-->
+                                </div> <!--FIM INPUT_BOX_SELECOES-->
+                            </div> <!--FIM INPUT_FIELDS OBS-->
+                            <button type="submit" class="btn_enviar">SUBMIT</button>
+                        </div> <!--FIM FIELDS-->
+                    </div> <!--FIM DETAILS PERSON-->
+
+                    </div> <!--FIM FORM FIRTS-->
+                    
+                </form>
+
+                    <h4 class="frase_final">Your journey to a pristine and well-maintained space is just a click away. <span> Act now! </span></h4>
+
+                </div> <!--FIM DO FLEX-->
+            </div> <!--FIM CONTAINER ORCAMENTO-->
+        </section> <!--FIM SECTION ORCAMENTO-->
+
+        <section class="module imagem4">
+            <h1>Appointments</h1>
+        </section> <!--FIM SECTION AGENDAMENTOS-->
+
+        <section id="Appointments" class="agendamentos">
+            
+            <div class="container agendamentos">             
+                <h1>REQUEST YOUR APPOINTMENT</h1>
+                    <h2>Already familiar with our services? Schedule your cleaning now.</h2>
+
+                    <form name="formulario_agendamentos" method="post" netlify>
+                        <div class="form firts agendamento">
+                            <div class="details person agendamento">
+
+                                <div class="fields agendamento">
+                                    <div class="input_fields agendamento">
+
+                                        <label>First and Last name</label>
+                                        <input name="name" type="name" placeholder="Enter your firts name" required>
+
+                                    </div> <!--FIM INPUT_FIELDS NOME-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>Date</label>
+                                        <input name="date" type="date" placeholder="Select date" required>
+
+                                    </div> <!--FIM INPUT_FIELDS DATE-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>Hour</label>
+                                        <input name="hour" type="time" placeholder="Enter the best hour" required>
+
+                                    </div> <!--FIM INPUT_FIELDS HORÁRIO-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>Phone number</label>
+                                        <input name="phone" type="number" placeholder="Enter your phone" required>
+
+                                    </div> <!--FIM INPUT_FIELDS TELEFONE-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>E-mail</label>
+                                        <input name="email" type="email" placeholder="Enter your e-mail for confirmation" required>
+
+                                    </div> <!--FIM INPUT_FIELDS E-MAIL-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>ZIP Code</label>
+                                        <input name="zipcode" type="number" placeholder="Enter your ZipCode" required>
+
+                                    </div> <!--FIM INPUT_FIELDS ZIP-->
+
+                                    <div class="input_fields agendamento">
+
+                                        <label>Address</label>
+                                        <input name="address" type="text" placeholder="Enter your address" required>
+
+                                    </div> <!--FIM INPUT_FIELDS ENDEREÇO-->
+
+                                    <div class="input_fields agendamento observacao">
+
+                                        <label class="observacao">Do you need any additional services?</label>
+                                        <input name="adicional_information" type="text" placeholder="Type here" required>
+
+                                    </div> <!--FIM INPUT_FIELDS OBS-->
+
+                                    <div class="input_fields agendamento fantasma">
+
+                                        <label class="observacao"></label>
+                                        <input type="text" placeholder="Type here">
+
+                                    </div> <!--FIM FANTASMA 1-->
+
+                                    
+                                    <button type="submit" class="btn_enviar agendamentos">SUBMIT</button>
+                                    <!--FIM BOTÃO ENVIAR SOLICITAÇÃO-->
+                                    
+
+                                </div> <!--FIM FIELDS-->
+
+                                
+                            </div> <!--FIM DETAILS PERSON-->
+                            
+                        </div> <!--FIM FORM FIRTS-->
+                        
+                    </form>
+            </div> <!--FIM CONTAINER AGENDAMENTOS-->
+        </section> <!--FIM SECTION AGENDAMENTOS-->  
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line_footer">
+                    <div class="logo_footer">
+                        <img class="logo_footer" src="assets/logo.png" alt="Logo da empresa Hutter">
+                    </div> <!--FIM LOGO_FOOTER-->
+                
+                    <div class="btn_social">
+                        <a href="https://www.instagram.com/huttercleaning?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                        <a href="https://wa.me/4259849284" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="sms:+4259849284"><button><i class="bi bi-chat-dots"></i></button></a>
+                        <a href="tel:+4259849284"><button><i class="bi bi-telephone-forward"></i></button></a>
+                        <a href="mailto:huttercleaning@gmail.com" target="_blank"><button><i class="bi bi-envelope-at"></i></button></a>
+
+                    </div> <!--FIM MÍDIAS SOCIAIS-->
+                
+
+            </div> <!--FIM LINE_FOOTER-->
+        </div> <!--FIM INTERFACE FOOTER-->
+
+            <div class="line_footer borda">
+                <p><i class="bi bi-telephone-forward-fill"></i> (425) 984.9284</p>
+                <p><i class="bi bi-envelope"><a href=> huttercleaning@gmail.com</a></i></p>
+            </div>
+            
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,1708 @@
+
+/* AJUSTES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI';
+    color: #242424;
+    
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* AJUSTES DO MENU */
+
+.interface {
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    visibility: visible;
+
+}
+
+
+.logo_foto_hutter {
+    /* Estilos para o logo da empresa */
+    height: 80px;
+    width: 170px;
+    flex-grow: 1;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.menu li{
+    margin: auto;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 0 30px;
+    color: #2F4263;
+    transition: .2s;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.menu li:hover {
+    background: #e2e9fb;
+    color: #fff;
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+.menu-hamburger {
+    display: none;
+}
+
+.menu_navegacao{
+    margin-right: 200px;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none; /* Esconde por padrão, será mostrado em telas menores */
+}
+
+
+/* AJUSTES DA SECTIONS */
+
+section.module{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50px 50px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backdrop-size: cover;
+    -moz-background-size: cover;
+    
+}
+
+section.module.imagem1{
+    background-image: url(assets/imagem1.png);
+}
+
+section.module.imagem2{
+    background-image: url(assets/imagem2.png);
+}
+
+section.module.imagem3{
+    background-image: url(assets/imagem3.png);
+}
+
+section.module.imagem4{
+    background-image: url(assets/imagem4.png);
+}
+
+section.module.imagem5{
+    background-image: url(assets/imagem5.png);
+}
+
+
+section.module.imagem1 h1,section.module.imagem2 h1,section.module.imagem3 h1,section.module.imagem4 h1,section.module.imagem5 h1{
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
+/* AJUSTES ADICIONAIS AS SESSÕES */
+
+
+main{
+    display: block;
+    background-color: #fff;
+   
+}
+
+/* SOBRE A EMPRESA */
+
+.interface .sobre_empresa{
+    background: #2F4263;
+    min-height: 90vh;
+    text-align: center;
+    margin: auto;
+}
+
+.interface .sobre_empresa:last-child{
+    margin-bottom: 0;
+}
+
+.interface .sobre_empresa h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 42px;
+    color: #fff;
+    background-color: #2F4263;
+
+}
+
+.interface .sobre_empresa i {
+    color: #fff;
+    font-size: 28px;
+}
+
+.interface .sobre_empresa h2{
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.interface .sobre_empresa p{
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.btn_contact, .btn_quote{
+    padding: 8px 25px;
+    background-color: #679C43;
+    border: none;
+    border-radius: 8px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn_contact:hover{
+    background-color: #076DB5;
+}
+
+.btn_quote:hover{
+    background-color: #076DB5;
+}
+
+
+/* SERVIÇOS */
+
+.nossos_servicos{
+    padding: 0 4%;
+    background-color: #076DB5;
+    height: 100vh;
+    
+}
+
+.nossos_servicos .container.servicos{
+    background-color: #076DB5;
+}
+
+.nossos_servicos .titulo{
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.nossos_servicos .servicos_boxs{
+    padding: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: .2s;
+    
+}
+
+.nossos_servicos .servicos_boxs:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+}
+
+.nossos_servicos .servicos_boxs i{
+    font-size: 32px;
+    color: #679C43;
+}
+
+.nossos_servicos .interface .container.servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas com larguras iguais */
+    grid-gap: 20px;
+    justify-content: center;
+    
+}
+
+.nossos_servicos > div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nossos_servicos .servicos_boxs h3{
+    font-size: 24px;
+    color: #fff;
+    padding-bottom: 10px;
+
+}
+
+.nossos_servicos .servicos_boxs p{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.nossos_servicos .btn_contact:hover{
+    background-color: #2F4263;
+}
+
+.nossos_servicos .btn_quote:hover{
+    background-color: #2F4263;
+}
+
+.titulo span {
+    position: relative;
+    display: inline-block;
+    color: #679C43  ;
+}
+
+h2 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    border-bottom: 2px solid #679C43; 
+}
+
+/* PERSONALIZAÇÃO DAS SOLICITAÇÕES DE ORÇAMENTO */
+
+section.orcamentos {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #679C43;
+    max-width: 100%;
+}
+
+.titulo.orcamento span {
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding-top: 30px;
+}
+
+.titulo.orcamento span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid black;
+}
+
+.orcamentos .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.orcamentos h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+section.orcamentos p{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text_leads{
+    width: 300px;
+    text-align: left;
+    padding-left: 30px;
+    text-align: center;
+    
+}
+
+.text_leads h1{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.text_leads h3{
+    font-size: 16px;
+    color: #2F4263;
+    text-transform: uppercase;
+}
+
+.text_leads p{
+    font-size: 28px;
+    color: #fff;
+    text-align: justify;
+
+}
+
+.text_leads h4{
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+
+/* PERSONALIZAR O FORMULÁRIO DA SESSÃO ORÇAMENTO */
+
+.container.orcamentos form{
+    position: relative;
+    background-color: #f2f2f2;
+    width: 70%;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: #242424;
+    margin: auto;
+    
+}
+
+.container.orcamentos form .details{
+    margin-top: 10px;
+}
+
+.container.orcamentos form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    
+}
+
+.container.orcamentos form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container.orcamentos form .fields .input_fields{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px;
+    text-align: center;
+}
+
+.container.orcamentos .input_fields label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+
+}
+
+.container.orcamentos .input_fields input{
+    height: 32px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+
+.container.orcamentos .input_fields input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.orcamentos h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.orcamentos h4 span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.orcamentos h4 span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid #fff;
+}
+
+.frase_final {
+    padding-bottom: 10px;
+}
+
+
+.btn_enviar {
+    padding: 8px 10px;
+    background-color: #679C43;
+    border: none;
+    border-radius: 8px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 200px;  
+}
+
+.btn_enviar:hover{
+    background-color: #076DB5;
+
+}
+
+form .btn_enviar {
+    display: block;     
+    width: max-content; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+}
+
+/* PERSONALIZAÇÃO DOS AGENDAMENTOS */
+
+.agendamentos h1 {
+    color: #02225a;
+    text-align: center;
+}
+
+.agendamentos h2 {
+    color: #b2cdfa;
+    text-align: center;
+    font-size: 18PX;
+}
+
+section.agendamentos{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #314263;
+}
+
+.container.agendamentos{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.01);
+
+}
+
+.details.person.agendamento {
+        text-align: center;
+        align-items: center;
+        
+
+}
+
+.container.agendamentos header{
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.container.agendamentos form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 300px;
+    background-color: #f2f2f2;
+    align-items: center;
+    
+}
+
+.container.agendamentos form .details{
+    margin-top: 30px;
+    
+    
+}
+
+.container.agendamentos form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+    
+}
+
+.container.agendamentos form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container.agendamentos form .fields .input_fields{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px;
+   
+    
+}
+
+.container.agendamentos .input_fields label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+    
+
+}
+
+.container.agendamentos .input_fields input{
+    height: 32px;
+    margin: 8px 0;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+
+}
+
+.container.agendamentos .input_fields input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.btn_enviar.agendamentos {
+    padding: 12px 10px;
+    background-color: #2F4263;
+    border: none;
+    border-radius: 8px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 200px;
+
+}
+
+
+.btn_enviar .agendamentos:hover{
+    background-color: #076DB5;
+
+}
+
+.input_fields.agendamento.observacao {
+    margin-left: 500px;
+    
+}
+
+.input_fields.agendamento.fantasma,
+.input_fields.agendamento.fantasma label,
+.input_fields.agendamento.fantasma input {
+    display: none;
+}
+
+/* PERSONALIZAÇÃO DO RODAPÉ */
+
+footer{
+    padding: 20px 4%;
+    background-color: #fff;
+}
+
+.logo_footer{
+    /* Estilos para o logo da empresa */
+    height: 100px;
+    width: 200px;
+    flex-grow: 1;
+    margin-left: 20px;
+    align-items: center;
+}
+
+footer .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .interface .line_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+    
+}
+
+.btn_social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #b2cdfa;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+
+}
+
+.btn_social button:hover{
+    background-color: #fff;
+}
+
+.btn_social button i{
+    font-size: 36px;
+}
+
+footer .line_footer{
+    display: block;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+}
+
+footer .line_footer p{
+    color: #2F4263;
+    font-size: 22px;
+    display: flex;
+}
+
+.borda{
+    border-top: 2px solid #2F4263;
+}
+
+.bi-instagram {
+    color: #E1306C;
+}
+
+.bi-facebook {
+    color: #1877F2;
+}
+
+.bi-facebook:hover {
+    color: #1358C6;
+}
+
+.bi-whatsapp {
+    color: #25D366;
+}
+
+
+
+/* CRIAÇÃO DAS MEDIAS QUERYS - RESPONSIVIDADE DAS TELAS */
+
+/* Celulares Pequenos */
+@media (max-width: 374px){
+
+    /* GERAL */
+    .interface {
+
+        justify-content: space-between;
+    }
+
+    /* MENU */
+
+    .menu_navegacao {
+        display: none;
+    }
+
+    .menu-hamburger {
+        cursor: pointer;
+        margin-right: 100px;
+    }
+
+    .menu_navegacao.active {
+        display: block; /* Mostra o menu quando ativo */
+    }
+
+    .menu li {
+        display: block; /* Faz cada item do menu aparecer em uma nova linha */
+    }
+
+
+    section.module.imagem1 h1,section.module.imagem2 h1,section.module.imagem3 h1,section.module.imagem4 h1,section.module.imagem5 h1{
+        font-size: 20px;
+
+    }
+
+    /* SOBRE A EMPRESA */
+
+    .interface .sobre_empresa h1{
+        font-size: 24px;
+    
+    }
+
+    .interface .sobre_empresa i {
+        font-size: 18px;
+    }
+    
+    .interface .sobre_empresa h2{
+        font-size: 16px;
+    }
+    
+    .interface .sobre_empresa p{
+        margin-bottom: 10px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+    
+    .btn_contact, .btn_quote{
+        padding: 8px 40px;
+        margin-bottom: 20px;
+
+    }
+
+    /* SERVIÇOS */
+
+    .nossos_servicos {
+        height: 1150px;
+    }
+    .nossos_servicos .titulo{
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .nossos_servicos .servicos_boxs{
+        padding: 15px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        transition: .2s;
+        margin-bottom: 10px;
+        
+    }
+
+    .nossos_servicos .servicos_boxs i{
+        font-size: 24px;
+       
+    }
+
+    .nossos_servicos .interface .container.servicos {
+        display: block;
+
+        
+    }
+
+    .nossos_servicos > div {
+        margin-top: 20px;
+    }
+
+    .nossos_servicos .servicos_boxs h3{
+        font-size: 24px;
+
+    }
+
+    .nossos_servicos .servicos_boxs p{
+        font-size: 12px;
+    }
+
+    .btn_contact, .btn_quote{
+
+        padding: 8px 10px;
+        font-size: 16px;
+
+    }
+
+    /* ORÇAMENTO */ 
+
+    .titulo.orcamento span {
+        padding-top: 30px;
+    }
+    
+    
+    .orcamentos .flex{
+        padding: 0;
+        margin: 0;
+        display: block;
+        
+    
+    }
+    
+    .orcamentos h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    section.orcamentos p{
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Segoe UI';
+    }
+    
+    .text_leads{
+        width: 300px;
+        padding-left: 15px;
+        
+    }
+    
+    .text_leads h1{
+        font-size: 24px;
+    }
+    
+    .text_leads h3{
+        font-size: 16px;
+    }
+    
+    .text_leads p{
+        font-size: 18px;
+    
+    }
+    
+    .text_leads h4{
+        font-size: 14px;
+        margin-bottom: 10px;
+    
+    }
+
+    .orcamentos h4 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .orcamentos h4 span {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        padding-top: 30px;
+    }
+
+    .orcamentos h4 span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid #fff;
+    }
+
+    /* PERSONALIZAR O FORMULÁRIO DA SESSÃO ORÇAMENTO */
+
+    .container.orcamentos form {
+        height: 1020px;
+        width: 300px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #679C43;
+    }
+
+    .container.orcamentos {
+        height: 1600px;
+        width: 100%;
+    
+    }
+
+    .orcamentos form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .form.first.orcamentos {
+        width: 200px;
+        justify-content: left;
+        background-color: #679C43;
+        width: 300px;
+        
+    }
+    
+    .container.orcamentos form .fields{
+        color: #fff;
+        width: 100%;
+        justify-content: left;
+        
+    
+    }
+
+    .container.orcamentos form .fields .input_fields{
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+        width: 100%;
+        padding-top: 10px;
+        text-align: left;
+        color: #fff;
+        
+        
+    }
+
+    .frase_final {
+        padding-bottom: 10px;
+        font-size: 14px;
+        padding-top: 30px;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .btn_enviar {
+        background-color: #fff;
+        color: #2F4263;
+        font-weight: 700;
+        transition: 0.2s;
+    
+    }
+    
+    .btn_enviar:hover{
+        background-color: #2F4263;
+    
+    }
+
+    .container.orcamentos form .fields .input_fields label {
+        color: #fff;
+    }
+
+    /* AGENDAMENTOS */
+
+    .agendamentos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .agendamentos h1 {
+        font-size: 18px;
+    }
+    
+    .agendamentos h2 {
+        font-size: 14PX;
+    }
+      
+    .container.agendamentos form{
+        background-color: #2F4263;
+        border-radius: 15px;
+        
+    }
+    
+    .container.agendamentos form .details{
+        margin-top: 30px;
+        
+    }
+    
+    .container.agendamentos form .title{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 6px 0;
+        color: #fff;
+        
+    }
+    
+    .container.agendamentos form .fields{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        
+    }
+    
+    .container.agendamentos form .fields .input_fields{
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+        width: 90%;
+        padding-top: 10px;
+    }
+    
+    .container.agendamentos .input_fields label{
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+    }
+  
+    
+    .btn_enviar.agendamentos {
+        background-color: #fff;
+        font-weight: 700;
+        color: #2F4263;
+        
+    }
+
+
+    /* RODAPÉ */
+
+    footer{
+        padding: 20px 4%;
+        background-color: #fff;
+    }
+    
+    .logo_footer{
+        display: none;
+    }
+    
+    
+    footer .interface .line_footer{
+        padding-bottom: 40px;
+        flex-direction: column;
+        
+    }
+    
+    .btn_social button{
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        border: none;
+        background-color: #b2cdfa;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: .2s;
+    
+    }
+    
+    .btn_social button:hover{
+        background-color: #fff;
+    }
+    
+    .btn_social button i{
+        font-size: 20px;
+    }
+    
+    footer .line_footer{
+        display: block;
+        justify-content: space-between;
+        padding-top: 50px;
+        
+    }
+    
+    footer .line_footer p{
+        color: #2F4263;
+        font-size: 22px;
+        display: flex;
+    }
+    
+    .borda{
+        border-top: 2px solid #2F4263;
+    }
+    
+    .bi-instagram {
+        color: #E1306C;
+    }
+    
+    .bi-facebook {
+        color: #1877F2;
+    }
+    
+    .bi-facebook:hover {
+        color: #1358C6;
+    }
+    
+    .bi-whatsapp {
+        color: #25D366;
+    }
+
+
+    }
+
+
+
+/* Celulares comuns */
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+    /* GERAL */
+    .interface {
+        justify-content: space-between;
+    }
+
+    section.module.imagem1, section.module.imagem2, section.module.imagem3, section.module.imagem4{
+        background-attachment: scroll;
+        background-size: cover; 
+        background-position: center;
+    }
+
+    section.module{
+        min-height: 50vh !important;
+    }
+
+    /* MENU */
+
+
+    .menu_navegacao {
+        display: none;
+    }
+
+    .menu_navegacao.active {
+        display: block;
+    }
+
+    .menu_navegacao.active ul,
+    .menu_navegacao ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        
+    }
+
+    .menu_navegacao.active li,
+    .menu_navegacao li {
+        margin: 10px 0;
+    
+    }
+
+    .menu_navegacao.active a,
+    .menu_navegacao a {
+        display: block;
+        
+    }
+
+    .menu_navegacao.active li a,
+    .menu_navegacao li a {
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        width: 120px;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+    }
+
+    .menu-hamburger {
+        cursor: pointer;
+        margin-right: 100px;
+        font-size: 44px;
+    }
+
+    .menu_navegacao.active {
+        display: block;
+    }
+
+    .menu li {
+        display: block; /* Faz cada item do menu aparecer em uma nova linha */
+    }
+
+
+    section.module.imagem1 h1,section.module.imagem2 h1,section.module.imagem3 h1,section.module.imagem4 h1,section.module.imagem5 h1{
+        font-size: 28px;
+
+    }
+
+    .close-button {
+        display: block; /* Mostra o botão de fechar em dispositivos móveis */
+        padding-right: 30px;
+    }
+
+    /* SOBRE A EMPRESA */
+
+    .sobre_empresa {
+        height: 100vh;
+    }
+
+    .interface .sobre_empresa {
+        padding: 40px 4%;
+        
+        
+    }
+
+    .interface .sobre_empresa h1{
+        font-size: 32px;
+    
+    }
+
+    .interface .sobre_empresa i {
+        font-size: 24px;
+    }
+    
+    .interface .sobre_empresa h2{
+        font-size: 16px;
+    }
+    
+    .interface .sobre_empresa p{
+        margin-bottom: 10px;
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+    
+    .btn_contact, .btn_quote{
+        padding: 8px 40px;
+        margin-bottom: 20px;
+
+    }
+
+    /* SERVIÇOS */
+
+    .nossos_servicos {
+        height: 1170px;
+    }
+    .nossos_servicos .titulo{
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .nossos_servicos .servicos_boxs{
+        padding: 15px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        transition: .2s;
+        margin-bottom: 20px;
+        
+    }
+
+    .nossos_servicos .servicos_boxs i{
+        font-size: 24px;
+       
+    }
+
+    .nossos_servicos .interface .container.servicos {
+        display: block;
+
+        
+    }
+
+    .nossos_servicos > div {
+        margin-top: 20px;
+    }
+
+    .nossos_servicos .servicos_boxs h3{
+        font-size: 24px;
+
+    }
+
+    .nossos_servicos .servicos_boxs p{
+        font-size: 12px;
+    }
+
+    .btn_contact, .btn_quote{
+
+        padding: 8px 10px;
+        font-size: 16px;
+
+    }
+
+    /* ORÇAMENTO */ 
+
+    .titulo.orcamento span {
+        padding-top: 30px;
+    }
+    
+    
+    .orcamentos .flex{
+        padding: 0;
+        margin: 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    
+    .orcamentos h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    
+    section.orcamentos p{
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Segoe UI';
+    }
+    
+    .text_leads{
+        width: 300px;
+        text-align: center;
+        padding-left: 60px;
+        
+    }
+    
+    .text_leads h1{
+        font-size: 32px;
+    }
+    
+    .text_leads h3{
+        font-size: 16px;
+    }
+    
+    .text_leads p{
+        font-size: 18px;
+        padding-bottom: 30px;
+    
+    }
+    
+    .text_leads h4{
+        font-size: 14px;
+        margin-bottom: 10px;
+    
+    }
+
+    .orcamentos h4 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .orcamentos h4 span {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        padding-top: 30px;
+    }
+
+    .orcamentos h4 span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid #fff;
+    }
+
+    /* PERSONALIZAR O FORMULÁRIO DA SESSÃO ORÇAMENTO */
+
+    .container.orcamentos form {
+        height: 1150px;
+        width: 400px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .container.orcamentos {
+        height: 1850px;
+        width: 100%;
+        align-items: center;
+        margin: 20px 4%;
+        
+    
+    }
+
+    .orcamentos form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .form.first.orcamentos {
+        width: 360px;
+        justify-content: left;
+        background-color: #679C43;
+        border-radius: 15px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    
+    .container.orcamentos form .fields{
+        color: #fff;
+        width: 100%;
+        justify-content: left;
+    
+    }
+
+    .container.orcamentos form .fields .input_fields{
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+        width: 90%;
+        padding-top: 10px;
+        text-align: left;
+        color: #fff;
+        padding-left: 10px;
+        justify-content: center;
+        
+        
+    }
+
+    .frase_final {
+        padding-bottom: 10px;
+        font-size: 16px;
+        padding-top: 30px;
+        align-items: center;
+        text-align: justify;
+        
+    }
+
+
+    .btn_enviar {
+        background-color: #fff;
+        color: #2F4263;
+        font-weight: 700;
+        transition: 0.2s;     
+        margin: 0 auto;
+    
+    }
+    
+    .btn_enviar:hover{
+        background-color: #2F4263;
+        color: #fff;
+    
+    }
+
+    .container.orcamentos form .fields .input_fields label {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /* AGENDAMENTOS */
+
+    .agendamentos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .agendamentos h1 {
+        font-size: 18px;
+    }
+    
+    .agendamentos h2 {
+        font-size: 14PX;
+    }
+      
+    .container.agendamentos form{
+        background-color: #2F4263;
+        border-radius: 15px;
+        
+    }
+    
+    .container.agendamentos form .details{
+        margin-top: 30px;
+        
+    }
+    
+    .container.agendamentos form .title{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 6px 0;
+        color: #fff;
+        
+    }
+    
+    .container.agendamentos form .fields{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        
+    }
+    
+    .container.agendamentos form .fields .input_fields{
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+        width: 90%;
+        padding-top: 10px;
+    }
+    
+    .container.agendamentos .input_fields label{
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+    }
+  
+    
+    .btn_enviar.agendamentos {
+        background-color: #fff;
+        font-weight: 700;
+        color: #2F4263;
+        
+    }
+
+
+    /* RODAPÉ */
+
+    footer{
+        padding: 20px 4%;
+        background-color: #fff;
+    }
+    
+    .logo_footer{
+        display: none;
+    }
+    
+    
+    footer .interface .line_footer{
+        padding-bottom: 40px;
+        flex-direction: column;
+        
+    }
+    
+    .btn_social button{
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        border: none;
+        background-color: #b2cdfa;
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0 5px;
+        transition: .2s;
+    
+    }
+    
+    .btn_social button:hover{
+        background-color: #fff;
+    }
+    
+    .btn_social button i{
+        font-size: 20px;
+    }
+    
+    footer .line_footer{
+        display: block;
+        justify-content: space-between;
+        padding-top: 20px;
+        
+    }
+    
+    footer .line_footer p{
+        color: #2F4263;
+        font-size: 22px;
+        display: flex;
+    }
+    
+    .borda{
+        border-top: 2px solid #2F4263;
+    }
+    
+    .bi-instagram {
+        color: #E1306C;
+    }
+    
+    .bi-facebook {
+        color: #1877F2;
+    }
+    
+    .bi-facebook:hover {
+        color: #1358C6;
+    }
+    
+    .bi-whatsapp {
+        color: #25D366;
+    }
+
+    
+}
+
+/* Tablets */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+    .interface {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .logo_foto_hutter {
+        /* Estilos para o logo da empresa */
+        margin-left: 30px;
+    
+    }
+
+    .menu li a {
+        font-size: 18px;
+        margin: auto;
+        padding: 0 10px;
+        justify-content: space-between;
+    
+    }
+
+    .menu_navegacao{
+        margin-right: 10%;
+    }
+
+
+    section.module.imagem1 h1,section.module.imagem2 h1,section.module.imagem3 h1,section.module.imagem4 h1,section.module.imagem5 h1{
+        font-size: 38px;
+
+    }
+
+
+    .interface .sobre_empresa h1{
+        margin-bottom: 5px;
+        margin-top: 5%;
+        font-size: 32px;
+        padding-top: 20px;
+    
+    }
+    
+    .interface .sobre_empresa i {
+        font-size: 24px;
+    }
+    
+    .interface .sobre_empresa h2{
+        font-size: 18px;
+    }
+    
+    .interface .sobre_empresa p{
+        margin-bottom: 10px;
+        font-size: 14px;
+        word-wrap: break-word;
+    }
+    
+    .btn_contact, .btn_quote{
+        padding: 8px 40px;
+        margin-bottom: 60px;
+
+    }
+
+
+
+}
+
+
+/* Desktops Grandes / Tela Grande */
+@media (min-width: 1025px) {
+
+}
+
+
+
+
+
