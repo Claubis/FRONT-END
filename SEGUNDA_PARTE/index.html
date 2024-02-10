@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hutter Cleaning</title>
+
+    <!--Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Link Font AWESOME-->
+    <script src="https://kit.fontawesome.com/abe66973be.js" crossorigin="anonymous"></script>
+
+    <!-- IMPORTAR ICONES DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Link JS do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Link para coletar icons de estrela para avaliaçãofeedback -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link para o arquivo JavaScript-->
+    <script src="Script.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Inicio do Menu-->
+    <nav class="navbar navbar-expand-lg fixed-top custom-bg-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="rounded float-start" src="assets/logo.png" alt="foto_logo" width="150rem" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="About" class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a id="Services" class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a id="Quote" class="nav-link disabled" aria-disabled="true">Request a Quote</a>
+            </li>
+            <li class="nav-item">
+              <a id="Appointments" class="nav-link" href="#">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a id="Contact" class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a id="Feedback" class="nav-link" href="#">Feedback</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim do menu -->
+
+    <!-- Primeira imagem, que mostra o casal como foco dos serviços que serão prestados -->
+    
+    <section id="home" class="module imagem1">
+      <div class="container module imagem1">
+        <h1>Hutter Cleaning Service</h1>
+        <!--<img src="assets/imagem1.png" class="img-fluid" alt="Primeira foto que retrata o casal que executa os serviços">
+        -->
+        </div>
+    </section> <!-- FIM IMAGE 1 -->
+
+    <!-- Inicio da sessão sobre a empresa -->
+    
+    <section id="about" class="sobre_empresa">
+      <div class="container sobre_empresa">
+        <h1>ABOUT US</h1> 
+        <p> <i class="bi bi-1-circle"></i> Expert Cleaning Services for Kirkland and Nearby Areas.
+        <p> <i class="bi bi-2-circle"></i>Let us take care of tidying up your home, apartment, or office while you focus on what's important to you.</p>
+                        
+        <p> <i class="bi bi-3-circle"></i> Our professional team ensures a spotless and organized space, giving you peace of mind and more time to enjoy your day.</p>
+                    
+        <p> <i class="bi bi-4-circle"></i> At Hutter Cleaning, we bring a personal touch to home cleaning.</p>
+                        
+        <p> <i class="bi bi-5-circle"></i> Managed by a dedicated couple, we transform your living spaces into serene havens.</p>
+                            
+        <h2>Trust us for a home that's not just clean, <br>
+            but a joy to live in.</h2>
+                    
+        <a href="tel:+4259849284"><button class="btn_contact">contact us</button></a>
+        <a href="#quote"><button class="btn_quote">request your quote</button></a>
+      </div>
+    </section> <!--Fim sessão sobre a empresa -->
+      
+
+    <!-- Segunda imagem e inicio da segunda sessão -->
+    
+    <section class="module imagem2">
+      <div class="container module imagem2">
+        <h1>Services</h1>
+        <!--<img src="assets/imagem2.png" class="img-fluid" alt="Segunda foto que retrata o casal executando um segundo tipo de serviço">
+        --></div>
+      </section> <!-- FIM IMAGE 2 -->
+
+    <!-- Inicio da sessão sobre os serviços prestados -->
+
+    <section id="services" class="services">
+      <div class="container servicos">
+        <h2 class="titulo"> <span>A CLEAN</span> FOR EVERY NEED</h2>
+
+        <div class="row">
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-1-circle"></i>
+                <h5 class="card-title">Regular Cleaning</h5>
+                <p class="card-text">Tailored to your family’s needs, our regular cleaning service keeps your home consistently fresh and welcoming.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Deep Cleaning</h5>
+                <p class="card-text">Our comprehensive deep cleaning approach extends beyond commonly-touched surfaces to lesser-used areas and hard-to-reach spots.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Move-In & Move-Out</h5>
+                <p class="card-text">Make your move smoother with Hutter Cleaning. We provide thorough cleaning for homes, apartments, and condos during move-ins and move-outs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Commercial</h5>
+                <p class="card-text">Ideal for property owners and hosts. Set your cleaning needs on autopilot with Hutter Cleaning.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Vacation Home</h5>
+                <p class="card-text">Recognizing cleanliness as a top priority for travelers, we use a 4-step rental cleaning checklist to ensure a thorough clean, readying your vacation rental for new guests.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center mb-3 mb-sm-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Event</h5>
+                <p class="card-text">Hosting an event is tiring enough – let us handle the cleanup. We’ll make sure your space is spotless for your next party or event.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_services">
+          <a href="tel:+4259849284"><button class="btn_contact">CONTACT US</button></a>
+          <a href="#quote"><button class="btn_quote">REQUEST YOUR QUOTE</button></a>
+  
+      </div> <!--FIM BOTÕES-->
+
+      </div>
+
+      
+
+      <!-- Inicio do carossel com as imagens dos serviços prestados até o momento -->
+
+      <div class="container lista_imagen"> <!-- Rever este item-->
+        <div id="carouselExampleAutoplaying" class="carousel slide custom-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/1.jpg" class="d-block" alt="...">
+              <img src="assets/2.jpg" class="d-block" alt="...">
+              <img src="assets/3.jpg" class="d-block" alt="...">
+              <img src="assets/4.jpg" class="d-block" alt="...">
+              <img src="assets/5.jpg" class="d-block" alt="...">
+              <img src="assets/6.jpg" class="d-block" alt="...">
+              <img src="assets/7.jpg" class="d-block" alt="...">
+              <img src="assets/8.jpg" class="d-block" alt="...">
+              <img src="assets/9.jpg" class="d-block" alt="...">
+              <img src="assets/10.jpg" class="d-block" alt="...">
+              <img src="assets/11.jpg" class="d-block" alt="...">
+              <img src="assets/12.jpg" class="d-block" alt="...">
+              <img src="assets/13.jpg" class="d-block" alt="...">
+              <img src="assets/14.jpg" class="d-block" alt="...">
+              <img src="assets/15.jpg" class="d-block" alt="...">
+              <img src="assets/16.jpg" class="d-block" alt="...">
+              <img src="assets/17.jpg" class="d-block" alt="...">
+              <img src="assets/18.jpg" class="d-block" alt="...">
+              <img src="assets/19.jpg" class="d-block" alt="...">
+              <img src="assets/20.jpg" class="d-block" alt="...">
+            </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+
+    </section> <!--Fim sessão de serviços-->
+
+    <!-- Terceira imagem e inicio da terceira sessão -->
+
+    <section class="module imagem3">
+      <div class="container">
+      <h1>Request a Quote</h1>
+      <!--<img src="assets/imagem3.png" class="img-fluid" alt="Terceira foto que retrata o casal executanda um terceiro tipo de serviço">
+      --></div>
+    </section> <!--FIM IMAGE 3-->
+
+    <!-- Inicio sessão Orçamento -->
+
+    <section id="quote" class="quote">
+    <div class="container">
+      <h1 class="title quote"><span>reques</span> your quote</h1>
+      <form>
+        <div class="row">
+          <div class="col">
+            <label for="InputFirstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="InputFirstName" aria-describedby="name" required>
+            <div id="name" class="form-text">Your name is required.</div>
+          </div>
+          <div class="col">
+            <label for="InputLastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="InputLastName">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="Email" placeholder="name@example.com" required>
+          <div id="name" class="form-text">Your email is required.</div>
+        </div>
+        <div class="mb-3">
+          <label for="Phone" class="form-label">Phone number</label>
+          <input type="number" class="form-control" id="PhoneNumber" required>
+          <div id="name" class="form-text">Your phone number is required.</div>
+        </div>
+        <div class="row">
+          <div class="col">
+          <label for="Zip" class="form-label">Zip Code</label>
+          <input type="number" class="form-control" id="ZipCode" required>
+          <div id="name" class="form-text">Your zip code is required.</div>
+        </div>  
+        <div class="col">
+          <label for="InputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="InputAddress">
+        </div>
+      </div>
+        <div class="mb-3">
+          <label for="SquareFeet" class="form-label">Square feet of your property</label>
+          <input type="number" class="form-control" id="SquareFeet">
+        </div>
+        <div class="mb-3">
+          <label for="Textarea" class="form-label">Do you need any additional services?</label>
+          <textarea class="form-control" id="Textarea" rows="2"></textarea>
+        </div>
+        <div class="row">
+          <div class="col">
+        <select class="form-select col" aria-label="Default select example">
+          <option selected>How many rooms?</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="col">
+        <select class="form-select col" aria-label="Default select example">
+          <option selected>What kind of cleaning?</option>
+          <option value="1">Regular Cleanin</option>
+          <option value="2">Deep Cleaning</option>
+          <option value="3">Move in & Move Out</option>
+          <option value="4">Commercial Cleaning</option>
+          <option value="5">Vacation Home Cleaning</option>
+          <option value="6">Event Cleaning</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+        <select class="form-select col" aria-label="Default select example">
+          <option selected>How often?</option>
+          <option value="1">Only Once</option>
+          <option value="2">Weekly</option>
+          <option value="3">Every two weeks</option>
+          <option value="4">Once a month</option>
+        </select>
+        </div>
+        <div class="col">
+        <select class="form-select mb-sm-3" aria-label="Default select example">
+          <option selected>Do you have pets</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+      </div>
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div> 
+  </section><!-- Fim da sessão orçamento -->
+
+  <!-- Quarta imagem e inicio da quarta sessão -->
+
+  <section class="module imagem4">
+    <div class="container">
+      <h1>Appointments</h1>
+      <!--<img src="assets/imagem4.png" class="img-fluid" alt="Quarta foto que retrata o casal executanda um quarto tipo de serviço">
+      --></div>
+  </section> <!--FIM IMAGE 4-->
+
+  <!-- Inicio sessão do agendamento -->
+
+  <section id="Appointments" class="Appointments">
+    <div class="container">
+      <h1 class="title appointments"><span>request</span> your appointment</h1>
+      <h2>Already familiar with our services? Schedule your cleaning now.</h2>
+      <form>
+        <div class="mb-3">
+          <label for="InputFiullName" class="form-label">Full name</label>
+          <input type="text" class="form-control" id="InputFullName" aria-describedby="name" required>
+          <div id="name" class="form-text">Your name is required.</div>
+        </div>
+        <div class="row">
+          <div class="col">
+          <label for="InputDate" class="form-label">Date</label>
+          <input type="date" class="form-control" id="InputDate" required>
+          <div id="name" class="form-text">The date is required.</div>
+          </div>
+        <div class="col">
+          <label for="hour" class="form-label">Hour</label>
+          <input type="time" class="form-control" id="hour" required>
+          <div id="name" class="form-text">The hour is required.</div>
+        </div>
+      </div>
+        <div class="mb-3">
+          <label for="Phone" class="form-label">Phone number</label>
+          <input type="number" class="form-control" id="PhoneNumber" required>
+          <div id="name" class="form-text">Your phone number is required.</div>
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="Email" placeholder="name@example.com" required>
+          <div id="name" class="form-text">Your email is required.</div>
+        </div>
+        <div class="row">
+          <div class="col">
+          <label for="Zip" class="form-label">Zip Code</label>
+          <input type="number" class="form-control" id="ZipCode" required>
+          <div id="name" class="form-text">Your zip code is required.</div>
+        </div>
+        <div class="col">
+          <label for="InputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="InputAddress">
+        </div>
+      </div>
+        <div class="mb-3">
+          <label for="Textarea" class="form-label">Do you need any additional services?</label>
+          <textarea class="form-control" id="Textarea" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <p>Attention: Our team will contact you for confirmation within 24 hours.</p>
+      </form>
+    </div> 
+  </section> <!-- Fim da sessão agendamento -->
+
+    <!-- Inicio sessão dos feedbacks -->
+
+    <section class="module imagem5">
+      <div class="container">
+        <h1>Feedback</h1>
+        <!--<img src="assets/imagem5.png" class="img-fluid" alt="Quinta foto que retrata o casal executanda um quarto tipo de serviço">
+        --></div>
+    </section> <!--FIM IMAGE 5-->
+
+  <section id="feedback" class="feedback"> 
+    <div class="wrapper">
+      <h3>Customer feedback</h3>
+      <form action="#">
+        <div class="rating">
+          <input type="number" name="rating" hidden>
+          <i class='bx bx-star star' style="--i: 0;"></i>
+          <i class='bx bx-star star' style="--i: 1;"></i>
+          <i class='bx bx-star star' style="--i: 2;"></i>
+          <i class='bx bx-star star' style="--i: 3;"></i>
+          <i class='bx bx-star star' style="--i: 4;"></i>
+        </div>
+        <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+        <div class="btn-group">
+          <button type="submit" class="btn submit">Submit</button>
+          <button class="btn cancel">Return to Menu</button>
+        </div>
+      </form>
+    </div>
+  </section> <!-- Fim da sessão dos feedbacks -->
+
+  <!-- Inicio do rodapé -->
+  <footer>
+    <div class="interface">
+        <h1>Contact Us </h1>
+        <div class="line_footer">
+                <div class="logo_footer">
+                    <img class="logo_footer" src="assets/logo.png" alt="Logo da empresa Hutter">
+                </div> <!--FIM LOGO_FOOTER-->
+            
+                <div class="btn_social">
+                    <a href="https://www.instagram.com/huttercleaning?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://www.facebook.com/profile.php?id=100095415333262&mibextid=LQQJ4d" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                    <a href="https://wa.me/4259849284" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="sms:+4259849284"><button><i class="bi bi-chat-dots"></i></button></a>
+                    <a href="tel:+4259849284"><button><i class="bi bi-telephone-forward"></i></button></a>
+                    <a href="mailto:huttercleaning@gmail.com" target="_blank"><button><i class="bi bi-envelope-at"></i></button></a>
+
+                </div> <!--FIM MÍDIAS SOCIAIS-->
+            
+
+        </div> <!--FIM LINE_FOOTER-->
+        </div> <!--FIM INTERFACE FOOTER-->
+
+        <div class="line_footer borda">
+            <p><i class="bi bi-telephone-forward-fill"></i> (425) 984.9284</p>
+            <p><i class="bi bi-envelope"><a href=> huttercleaning@gmail.com</a></i></p>
+        </div>
+        
+  </footer>
+
+
+  </body>
+</html>
