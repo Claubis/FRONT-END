@@ -10,14 +10,59 @@
 }
 
 .container-fluid {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .container-fluid .navbar-brand {
     padding-left: 100px;
 }
 
+/* Sobre a empresa */
+
+.about_us .container-fluid {
+    background-color: #ffffff;
+    margin: auto;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.about_us .container-fluid h1 {
+    padding-top: 50px;
+    
+}
+
+.about_us .container-fluid h2 {
+    padding-top: 50px;
+}
+
+.about_us .container-fluid h3 {
+    padding-top: 50px;
+}
+
 /* Serviços */
+
+.services {
+    height: 100vh;
+    background-color: #e7f1f3;
+    justify-content: center;
+    padding-top: 80px;
+    margin: auto;
+    display: grid;
+}
+
+.services h1 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.row.row-cols-1.row-cols-md-3.g-4 {
+    margin: auto;
+    
+}
+
+.card-body {
+    background-color: #e7f1f3;
+}
 
 .card.h-100.logo_empresa {
     align-items: center;
@@ -27,30 +72,43 @@
 /* Orçamentos*/
 
 #quote {
-    background-color: #FABA12;
+    background-color: #cfe3e7;
     height: 100vh;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 80px;
+
 }
 
-#quote .title.quote {
-    padding-bottom: 50px;
+
+.container.quote {
+    padding-top: 40px
 }
 
 /* Feedback */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.container-fluid.feedback {
-    width: 60%;
-    height: 60vh;
-    padding-top: 50px;
+section .feedback {
+    background-color: #b7d4da;
     align-items: center;
+    margin: auto;
+
 }
+
+.container-fluid.feedback {
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+
+}
+
 
 .container-fluid.feedback h1 {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 :root {
@@ -64,7 +122,7 @@
 }
 
 
-.wrapper {
+.col-sm-6.mb-3.mb-sm-0 {
 	background: var(--white);
 	padding: 2rem;
 	max-width: 800px;
@@ -74,8 +132,9 @@
 	text-align: center;
     margin: auto;
     height: 50vh;
+
 }
-.wrapper h3 {
+.col-sm-6.mb-3.mb-sm-0 h3 {
 	font-size: 1.5rem;
 	font-weight: 600;
 	margin-bottom: 1rem;
@@ -155,10 +214,13 @@ textarea {
 	background: var(--light);
 }
 
+
+
+
 /* Footer */
 
 .footer {
-    background-color: #D1EDF8;
+    background-color: #9fc6ce;
     height: 300px;
     
 }
@@ -192,9 +254,6 @@ textarea {
 
 
 
-
-
-
 .container-fluid.footer ul.icons_rede_social {
     display: flex;
     list-style-type: none;
@@ -202,3 +261,29 @@ textarea {
     align-items: center;
     margin: auto;
 }
+
+.footer_heading {
+    text-align: center;
+    
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.col.footer {
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+.col.footer nav ul li a {
+    text-decoration: none;
+}
+
