@@ -27,11 +27,17 @@
         <header> <!-- Inicio do header -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
                 <div class="container-fluid">
+
                     <a class="navbar-brand" href="#">
                         <img src="ASSTES/Captura de tela 2024-02-13 124000.png" alt="Bootstrap" width="170" height="80">
                     </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav nav-pills nav-fill">
+                        <ul class="navbar-nav"> <!--nav nav-pills nav-fill-->
                             <li class="nav-item">
                                 <a class="nav-link" href="#home">Company</a>
                             </li>
@@ -59,6 +65,8 @@
                     </div>
                 </div>
             </nav>
+
+            
 
         </header> <!-- Fim do header -->
 
@@ -150,7 +158,7 @@
             <section id="quote" class="quote"> <!-- Inicio do Quote -->
                 <div class="container quote">
                     <h1 class="title quote"><span>Reques</span> your quote FREE</h1>
-                    <form>
+                    <form class="formulario_orcamento">
                     <div class="row">
                         <div class="col">
                         <label for="InputFirstName" class="form-label">First name</label>
@@ -242,7 +250,7 @@
             <section id="feedback" class="feedback"> <!-- Inicio do Feedback -->
                 <div class="container-fluid feedback">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <h1>Customer feedback</h1>
+                        <h1 class="titulo_feedback">Customer feedback</h1>
                         <form id="feedbackForm" action="#">
                             <div class="rating">
                                 <input type="number" name="rating" hidden>
@@ -260,7 +268,7 @@
                         </form>
                     </div> <!-- Fim da div col-sm-6 mb-3 mb-sm-0 -->
                     <div class="col-sm-6">
-                        <h1> Texto para falar sobre os feedbacks e também colocar os melhores que foram realizados. </h1>
+                        <h1 class="feedbacks_textos"> Texto para falar sobre os feedbacks e também colocar os melhores que foram realizados. </h1>
                     </div> <!-- Fim da div col-sm-6 -->
                     
                 </div> <!-- Fim da div container-fluid feedback -->
