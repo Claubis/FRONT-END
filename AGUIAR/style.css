@@ -5,17 +5,12 @@
     padding: 0;
 }
 
-body {
-    max-width: 100%;
-    height: 100vh;
-}
-
 
 /* Menu */
 
 .collapse.navbar-collapse {
     justify-content: center;
-    font-size: 22px;
+   
 }
 
 .container-fluid {
@@ -23,359 +18,139 @@ body {
 }
 
 .container-fluid .navbar-brand {
-    padding-left: 100px;
-}
-
-/* Sobre a empresa */
-
-.about_us .container-fluid {
-    background-color: #ffffff;
-    margin: auto;
-    height: 100vh;
-    padding-top: 80px;
-}
-
-.about_us .container-fluid h1 {
-    padding-top: 50px;
-    
-}
-
-.about_us .container-fluid h2 {
-    padding-top: 20px;
-}
-
-.about_us .container-fluid h3 {
-    padding-top: 20px;
-}
-
-/* Serviços */
-
-.services {
-    height: 100vh;
-    background-color: #e7f1f3;
-    justify-content: center;
-    padding-top: 80px;
-    margin: auto;
-    display: grid;
-}
-
-.services h1 {
-    text-align: center;
-    padding-top: 80px;
-}
-
-.row.row-cols-1.row-cols-md-3.g-4 {
-    margin: auto;
-    
-}
-
-.card-body {
-    background-color: #e7f1f3;
-}
-
-.card.h-100.logo_empresa {
-    align-items: center;
-    border: none;
-}
-
-/* Orçamentos*/
-
-#quote {
-    background-color: #cfe3e7;
-    height: 120vh;
-    margin: auto;
-    padding-top: 80px;
-
-}
-
-.container.quote {
-    padding-top: 40px;
-    max-height: 200px;
-}
-
-.formulario_orcamento label {
-    max-height: 5px;
-
+    padding-left: 50px;
 }
 
 
-/* Feedback */
+/* Logo do menu */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-section .feedback {
-    background-color: #b7d4da;
-    align-items: center;
-    margin: auto;
-
+.navbar-brand .imagem_logo {
+    width: 170px; 
+    height: 80px;
 }
 
-.container-fluid.feedback {
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 70px;
-
-}
-
-
-.container-fluid.feedback h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 30px;
-    margin: auto;
-    width: 70vh;
-}
-
-:root {
-	--yellow: #FFBD13;
-	--blue: #4383FF;
-	--blue-d-1: #3278FF;
-	--light: #F5F5F5;
-	--grey: #AAA;
-	--white: #FFF;
-	--shadow: 8px 8px 30px rgba(0,0,0,.05);
-}
-
-
-.col-sm-6.mb-3.mb-sm-0 {
-	background: var(--white);
-	padding: 2rem;
-	max-width: 800px;
-	width: 100%;
-	border-radius: .75rem;
-	box-shadow: var(--shadow);
-	text-align: center;
-
-}
-
-.col-sm-6.mb-3.mb-sm-0 h3 {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 1rem;
-}
-
-.rating {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: .5rem;
-	font-size: 4rem;
-	color: var(--yellow);
-	margin-bottom: 2rem;
-}
-.rating .star {
-	cursor: pointer;
-}
-.rating .star.active {
-	opacity: 0;
-	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
-}
-
-@keyframes animate {
-	0% {
-		opacity: 0;
-		transform: scale(1);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.2);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-
-
-.rating .star:hover {
-	transform: scale(1.1);
-}
-textarea {
-	width: 100%;
-	background: var(--light);
-	padding: 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	resize: none;
-	margin-bottom: .5rem;
-}
-.btn-group {
-	display: flex;
-	grid-gap: .5rem;
-	align-items: center;
-}
-.btn-group .btn {
-	padding: .75rem 1rem;
-	border-radius: .5rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	font-size: .875rem;
-	font-weight: 500;
-}
-.btn-group .btn.submit {
-	background: var(--blue);
-	color: var(--white);
-}
-.btn-group .btn.submit:hover {
-	background: var(--blue-d-1);
-}
-.btn-group .btn.cancel {
-	background: var(--white);
-	color: var(--blue);
-}
-.btn-group .btn.cancel:hover {
-	background: var(--light);
-}
-
-
-
-
-/* Footer */
-
-.footer {
-    background-color: #9fc6ce;
-    height: 300px;
-    
-}
-
-.container-fluid.footer { 
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    
-}
-
-.footer_social_title {
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.footer_social_sub_title {
-    font-size: 14px;
-}
-
-.icons_rede_social {
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.rede_social {
-    font-size: 36px;
-    
-
-}
-
-
-
-.container-fluid.footer ul.icons_rede_social {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-
-.footer_heading {
-    text-align: center;
-    
-
-}
-
-ul {
-    list-style-type: none;
-}
-
-
-
-.col.footer {
-    text-align: center;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    
-}
-
-.col.footer nav ul li a {
-    text-decoration: none;
-}
-
-
-/* Inicio da responsividade para Small devices (landscape phones, 576px and up) */
-
-@media (max-width: 390px) {
-
-    /* Sobre a empresa */
-
-    .about_us .container-fluid {
-        background-color: #ffffff;
-        margin: auto;
-        height: 120vh;
-        padding-top: 80px;
+@media (max-width: 576px) {
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 24px;
     }
 
-    .about_us .container-fluid h1 {
-        padding-top: 50px;
+    /* Geral */
+    body {
+        background-color: gray;
+        padding: 10px;
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 120px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
         
     }
 
-    .about_us .container-fluid h2 {
-        padding-top: 20px;
+    .about_us .container-fluid h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
     }
 
     .about_us .container-fluid h3 {
-        padding-top: 20px;
+        font-size: 16px;
+        text-align: center;
     }
 
-
-     /* Serviços */
+    /* Serviços */
 
     .services {
-        height: 140vh;
+        height: 150rem;
         background-color: #e7f1f3;
         justify-content: center;
-        padding-top: 20px;
         margin: auto;
         display: grid;
     }
 
     .services h1 {
         text-align: center;
-        padding-top: 20px;
-        font-size: 18px;
+        padding-top: 40px;
+        margin: 20px;
+        
     }
 
-    .services h2 {
-        text-align: center;
-        padding-top: 20px;
-        font-size: 14px;
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        margin: auto;
+        
     }
 
+    .card-body {
+        background-color: #e7f1f3;
+    }
 
     .card.h-100.logo_empresa {
         align-items: center;
         border: none;
     }
 
+    .services h2 {
+        text-align: center;
+        padding-top: 40px;
+        color: red;
+        margin: 20px;
+        
+    }
+
     /* Orçamentos*/
 
     #quote {
         background-color: #cfe3e7;
-        height: 90vh;
+        height: 70rem;
         margin: auto;
-        padding-top: 20px;
+        padding-top: 30px;
 
+    }
+
+    .title.quote {
+        text-align: center;
+    }
+
+    .formulario_orcamento label {
+        max-height: 20px;
+
+    }
+
+    .formulario_orcamento {
+        padding-top: 20px;
+    }
+
+    .form-select {
+        margin-top: 20px;
+    }
+
+    .btn.btn-primary.quote {
+        margin-top: 30px;
+        padding: 5px 50px 5px 50px;
+        margin-left: 30%;
+    }
+
+    label {
+        font-size: 14px;
     }
 
     /* Feedback */
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+    section .feedback {
+        background-color: #b7d4da;
+        align-items: center;
+        margin: auto;
+
+    }
 
     .container-fluid.feedback {
         width: 100%;
@@ -383,259 +158,1592 @@ ul {
         align-items: center;
         display: grid;
         align-items: center;
-        padding-bottom: 20px;
-        flex-direction: column;
         padding-top: 50px;
 
-
     }
-
 
     .container-fluid.feedback h1 {
         text-align: center;
-        padding-bottom: 20px;
         font-size: 24px;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        
-
+        margin: auto;
+        padding-bottom: 20px;
     }
 
-    .titulo_feedback {
-        padding-right: 300px;
+    .container-fluid.feedback h2 {
+        text-align: center;
+        font-size: 18px;
+        margin: auto;
+        margin: 10px;
     }
 
-    .feedbacks_textos {
-        display: none;
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
     }
 
     .col-sm-6.mb-3.mb-sm-0 {
         background: var(--white);
         padding: 2rem;
-        width: 52%;
+        width: 100%;
         border-radius: .75rem;
         box-shadow: var(--shadow);
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: 4;
     
     }
 
+    .col-sm-6.mb-3.mb-sm-0 h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
     .rating {
-        font-size: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
     }
 
     /* Footer */
 
     .footer {
-        height: 230px;
+        background-color: #9fc6ce;
         
-    }
-
-    .container-fluid.footer { 
-        display: block;
-        justify-content: center;
-        margin: 0;
-        flex-direction: column;
-        
-    }
-
-
-    .container-fluid.footer ul.icons_rede_social {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .rede_social {
-        font-size: 28px;       
-
     }
 
     .row.align-items-center {
         display: grid;
         flex-direction: column;
-    
+        text-align: center;
     }
 
-    .footer_social_title {
-        padding-top: 20px;
+    .container-fluid.footer { 
+        display: flex;
+        justify-content: center;
         margin: auto;
+        flex-direction: column;
+        
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
         text-align: center;
-        font-size: 18px;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
-        padding-top: 20px;
     }
 
-
-}
-
-@media (min-width: 391px) and (max-width: 767px) {
-    /* Sobre a empresa */
-
-    .about_us .container-fluid {
-        background-color: #ffffff;
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
         margin: auto;
-        height: 100vh;
-        padding-top: 80px;
+        padding-right: 30px;
     }
 
-    .about_us .container-fluid h1 {
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .footer_heading {
+        text-align: center;
+
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .col.footer {
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        justify-content: space-around;
         padding-top: 50px;
         
     }
 
-    .about_us .container-fluid h2 {
-        padding-top: 20px;
-    }
-
-    .about_us .container-fluid h3 {
-        padding-top: 20px;
+    .col.footer nav ul li a {
+        text-decoration: none;
     }
 
 
-     /* Serviços */
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 24px;
+    }
+
+    /* Geral */
+    body {
+        background-color: green;
+        padding: 10px;
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 100px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
+        
+    }
+
+    .about_us .container-fluid h1 {
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
+    }
+
+    /* Serviços */
 
     .services {
-        height: 150vh;
+        height: 180rem;
         background-color: #e7f1f3;
         justify-content: center;
-        padding-top: 20px;
         margin: auto;
         display: grid;
     }
 
     .services h1 {
         text-align: center;
-        padding-top: 20px;
-        font-size: 18px;
+        padding-top: 40px;
+        
     }
 
-    .services h2 {
-        text-align: center;
-        padding-top: 20px;
-        font-size: 14px;
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        margin: auto;
+        
     }
 
+    .card-body {
+        background-color: #e7f1f3;
+    }
 
     .card.h-100.logo_empresa {
         align-items: center;
         border: none;
     }
 
+    .services h2 {
+        text-align: center;
+        padding-top: 40px;
+        color: red;
+        
+    }
+
     /* Orçamentos*/
 
     #quote {
         background-color: #cfe3e7;
-        height: 80vh;
+        height: 100vh;
         margin: auto;
-        padding-top: 20px;
+        padding-top: 30px;
 
+    }
+
+    .title.quote {
+        text-align: center;
+    }
+
+    .formulario_orcamento label {
+        max-height: 20px;
+
+    }
+
+    .formulario_orcamento {
+        padding-top: 20px;
+    }
+
+    .form-select {
+        margin-top: 20px;
+    }
+
+    .formulario_orcamento .btn.btn-primary {
+        margin-top: 30px;
+        padding: 10px 50px 10px 50px;
+        margin-left: 180px;
+    }
+
+    label {
+        font-size: 14px;
     }
 
     /* Feedback */
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+    section .feedback {
+        background-color: #b7d4da;
+
+    }
 
     .container-fluid.feedback {
         width: 100%;
-        height: 50vh;
+        height: 80vh;
         align-items: center;
         display: grid;
-        align-items: center;
-        padding-bottom: 20px;
-        flex-direction: column;
-        padding-top: 50px;
-
+        text-align: center;
 
     }
-
 
     .container-fluid.feedback h1 {
         text-align: center;
-        padding-bottom: 20px;
         font-size: 24px;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        
+        margin: auto;
+    }
+
+    .container-fluid.feedback h2 {
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin: 10px;
 
     }
 
-    .titulo_feedback {
-        padding-right: 300px;
-    }
-
-    .feedbacks_textos {
-        display: none;
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
     }
 
     .col-sm-6.mb-3.mb-sm-0 {
         background: var(--white);
         padding: 2rem;
-        width: 52%;
+        width: 100%;
         border-radius: .75rem;
         box-shadow: var(--shadow);
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: 4;
     
     }
 
+
+
     .rating {
-        font-size: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+    
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
     }
 
     /* Footer */
 
     .footer {
-        height: 230px;
+        background-color: #9fc6ce;
         
-    }
-
-    .container-fluid.footer { 
-        display: block;
-        justify-content: center;
-        margin: 0;
-        flex-direction: column;
-        
-    }
-
-
-    .container-fluid.footer ul.icons_rede_social {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .rede_social {
-        font-size: 28px;       
-
     }
 
     .row.align-items-center {
         display: grid;
         flex-direction: column;
-    
+        text-align: center;
     }
 
-    .footer_social_title {
-        padding-top: 20px;
+    .container-fluid.footer { 
+        display: flex;
+        justify-content: center;
         margin: auto;
+        flex-direction: column;
+        
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
         text-align: center;
-        font-size: 18px;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
+    }
+
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding-right: 30px;
+    }
+
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .footer_heading {
+        text-align: center;
+
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .col.footer {
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 50px;
+        
+    }
+
+    .col.footer nav ul li a {
+        text-decoration: none;
+    }
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 24px;
+    }
+
+    /* Geral */
+    body {
+        background-color: blue;
+        padding: 10px;
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 120px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
+        
+    }
+
+    .about_us .container-fluid h1 {
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
+    }
+
+    /* Serviços */
+
+    .services {
+        height: 70rem;
+        background-color: #e7f1f3;
+        justify-content: center;
+        margin: auto;
+        display: grid;
+    }
+
+    .services h1 {
+        text-align: center;
+        padding-top: 40px;
+        
+    }
+
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        margin: auto;
+        
+    }
+
+    .card-body {
+        background-color: #e7f1f3;
+    }
+
+    .card.h-100.logo_empresa {
+        align-items: center;
+        border: none;
+    }
+
+    .services h2 {
+        text-align: center;
+        padding-top: 0;
+        color: red;
+        
+    }
+
+    /* Orçamentos*/
+
+    #quote {
+        background-color: #cfe3e7;
+        height: 100vh;
+        margin: auto;
+        padding-top: 30px;
+
+    }
+
+    .title.quote {
+        text-align: center;
+    }
+
+    .formulario_orcamento label {
+        max-height: 20px;
+
+    }
+
+    .formulario_orcamento {
         padding-top: 20px;
     }
+
+    .form-select {
+        margin-top: 20px;
+    }
+
+    .formulario_orcamento .btn.btn-primary {
+        margin-top: 30px;
+        padding: 10px 50px 10px 50px;
+        margin-left: 270px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    /* Feedback */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    section .feedback {
+        background-color: #b7d4da;
+
+    }
+
+    .container-fluid.feedback {
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+        display: grid;
+        text-align: center;
+
+    }
+
+    .container-fluid.feedback h1 {
+        text-align: center;
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .container-fluid.feedback h2 {
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin: 10px;
+
+    }
+
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
+    }
+
+    .col-sm-6.mb-3.mb-sm-0 {
+        background: var(--white);
+        padding: 2rem;
+        width: 100%;
+        border-radius: .75rem;
+        box-shadow: var(--shadow);
+        text-align: center;
     
+    }
+
+    .col-sm-6.mb-3.mb-sm-0 h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+    
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: #9fc6ce;
+        
+    }
+
+    .row.align-items-center {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer_social_sub_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding-right: 30px;
+    }
+
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .col.footer nav ul li a {
+        text-decoration: none;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1999px) {
+    
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 24px;
+    }
+
+    /* Geral */
+    body {
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 120px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
+        
+    }
+
+    .about_us .container-fluid h1 {
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
+    }
+
+    /* Serviços */
+
+    .services {
+        height: 80rem;
+        background-color: #e7f1f3;
+        justify-content: center;
+        margin: auto;
+        display: grid;
+    }
+
+    .services h1 {
+        text-align: center;
+        padding-top: 40px;
+        
+    }
+
+    .row.row-cols-1.row-cols-md-3.g-4 {
+        margin: auto;
+        
+    }
+
+    .card-body {
+        background-color: #e7f1f3;
+    }
+
+    .card.h-100.logo_empresa {
+        align-items: center;
+        border: none;
+    }
+
+    .services h2 {
+        text-align: center;
+        padding-top: 0;
+        color: red;
+        
+    }
+
+    /* Orçamentos*/
+
+    #quote {
+        background-color: #cfe3e7;
+        height: 100vh;
+        margin: auto;
+        padding-top: 30px;
+
+    }
+
+    .title.quote {
+        text-align: center;
+    }
+
+    .formulario_orcamento label {
+        max-height: 20px;
+
+    }
+
+    .formulario_orcamento {
+        padding-top: 20px;
+    }
+
+    .form-select {
+        margin-top: 20px;
+    }
+
+    .formulario_orcamento .btn.btn-primary {
+        margin-top: 30px;
+        padding: 10px 50px 10px 50px;
+        margin-left: 40%;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    /* Feedback */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    section .feedback {
+        background-color: #b7d4da;
+
+    }
+
+    .container-fluid.feedback {
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+        display: grid;
+        text-align: center;
+
+    }
+
+    .container-fluid.feedback h1 {
+        text-align: center;
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .container-fluid.feedback h2 {
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin: 10px;
+
+    }
+
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
+    }
+
+    .col-sm-6.mb-3.mb-sm-0 {
+        background: var(--white);
+        padding: 2rem;
+        width: 100%;
+        border-radius: .75rem;
+        box-shadow: var(--shadow);
+        text-align: center;
+    
+    }
+
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+    
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: #9fc6ce;
+        
+    }
+
+    .row.align-items-center {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer_social_sub_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding-right: 30px;
+    }
+
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .col.footer nav ul li a {
+        text-decoration: none;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 24px;
+    }
+
+    /* Geral */
+    body {
+        background-color: red;
+        padding: 10px;
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 120px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
+    }
+
+    .about_us .container-fluid h1 {
+        padding-top: 50px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
+    }
+
+    /* Feedback */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    section .feedback {
+        background-color: #b7d4da;
+
+    }
+
+    .container-fluid.feedback {
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .container-fluid.feedback h1 {
+        text-align: center;
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .container-fluid.feedback h2 {
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin: 10px;
+
+    }
+
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
+    }
+
+    .col-sm-6.mb-3.mb-sm-0 {
+        background: var(--white);
+        padding: 2rem;
+        width: 60%;
+        border-radius: .75rem;
+        box-shadow: var(--shadow);
+        text-align: center;
+    
+    }
+
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+    
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: #9fc6ce;
+        
+    }
+
+    .row.align-items-center {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer_social_sub_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding-right: 30px;
+    }
+
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .col.footer nav ul li a {
+        text-decoration: none;
+    }
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+    /* Menu */
+    .collapse.navbar-collapse {
+        justify-content: space-around;
+        font-size: 28px;
+       
+    }
+
+    /* Geral */
+    body {
+        background-color: black;
+        padding: 10px;
+        
+    }
+
+    /* Sobre a empresa*/
+    .about_us .container-fluid {
+        padding-top: 120px;
+        height: 100vh;
+        display: grid;
+        text-align: center;
+    }
+
+    .about_us .container-fluid h1 {
+        padding-top: 50px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .about_us .container-fluid ul {
+        list-style-type: none;
+    }
+
+    /* Feedback */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    section .feedback {
+        background-color: #b7d4da;
+
+    }
+
+    .container-fluid.feedback {
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .container-fluid.feedback h1 {
+        text-align: center;
+        font-size: 24px;
+        margin: auto;
+    }
+
+    .container-fluid.feedback h2 {
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin: 10px;
+
+    }
+
+    :root {
+        --yellow: #FFBD13;
+        --blue: #4383FF;
+        --blue-d-1: #3278FF;
+        --light: #F5F5F5;
+        --grey: #AAA;
+        --white: #FFF;
+        --shadow: 8px 8px 30px rgba(0,0,0,.05);
+    }
+
+    .col-sm-6.mb-3.mb-sm-0 {
+        background: var(--white);
+        padding: 2rem;
+        width: 60%;
+        border-radius: .75rem;
+        box-shadow: var(--shadow);
+        text-align: center;
+    
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: .5rem;
+        font-size: 48px;
+        color: var(--yellow);
+        margin-bottom: 2rem;
+    }
+    .rating .star {
+        cursor: pointer;
+    }
+    .rating .star.active {
+        opacity: 0;
+        animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    
+    .rating .star:hover {
+        transform: scale(1.1);
+    }
+
+    textarea {
+        width: 100%;
+        background: var(--light);
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+
+    .btn-group {
+        display: flex;
+        grid-gap: .5rem;
+        align-items: center;
+    }
+    .btn-group .btn {
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: .875rem;
+        font-weight: 500;
+    }
+    .btn-group .btn.submit {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .btn-group .btn.submit:hover {
+        background: var(--blue-d-1);
+    }
+
+    .btn-group .btn.cancel {
+        background: var(--white);
+        color: var(--blue);
+    }
+    
+    .btn-group .btn.cancel:hover {
+        background: var(--light);
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: #9fc6ce;
+        
+    }
+
+    .row.align-items-center {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        align-items: center;
+    }
+
+
+    .footer_social_title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer_social_sub_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .icons_rede_social {
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: auto;
+        padding-right: 30px;
+    }
+
+    .rede_social {
+        font-size: 36px;
+        
+
+    }
+
+    .container-fluid.footer ul.icons_rede_social {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    ul {
+        list-style-type: none;
+    }
+
+
+    .col.footer nav ul li a {
+        text-decoration: none;
+    }
+
+
+
 }
