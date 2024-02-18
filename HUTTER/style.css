@@ -43,8 +43,7 @@
 
     /* Geral */
     body {
-        background-color: pink;
-        padding: 10px;
+        padding: 0;
         
     }
 
@@ -141,7 +140,7 @@
         background-color: #076DB5;
         display: flex;
         flex-direction: column;
-        height: 200vh;
+        height: 110rem;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -288,7 +287,7 @@
 
     section#quote.quote {
         background-color: #679C43;
-        height: 95vh;
+        height: 100vh;
     }
 
     .title.quote {
@@ -339,7 +338,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 70vh;
+        height: 80vh;
         padding: 10px;
         
     }
@@ -370,7 +369,8 @@
 
     .formulario_orcamento .btn.btn-primary.quote {
         text-align: center;
-        margin-left: 110px;
+        margin-left: 130px;
+        margin-top: 20px;
     
     }
 
@@ -401,7 +401,7 @@
 
     .container-fluid.feedback .title {
         text-align: center;
-        font-size: 20px;
+        font-size: 22px;
         margin: auto;
         padding-top: 20px;
         color: #e7f1f3;
@@ -444,7 +444,7 @@
 
     .titulo_feedback {
         padding-bottom: 10px;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .rating {
@@ -532,7 +532,7 @@
         text-transform: uppercase;
         padding-top: 5px;
         color: #e7f1f3;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .col.feedback p {
@@ -621,6 +621,7 @@
 
     .col.footer nav ul li a {
         text-decoration: none;
+      
     }
 
 
@@ -641,12 +642,6 @@
         text-align: left;
     }
 
-    /* Geral */
-    body {
-        background-color: green;
-        padding: 10px;
-        
-    }
 
     /* Sessão de Imagens */
 
@@ -740,7 +735,7 @@
         background-color: #076DB5;
         display: flex;
         flex-direction: column;
-        height: 170vh;
+        height: 100rem;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -749,9 +744,10 @@
 
     .services h1 {
         color: #fff;
-        font-size: 28px;
+        font-size: 32px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 0;
     }
 
     .services span {
@@ -887,7 +883,7 @@
 
     section#quote.quote {
         background-color: #679C43;
-        height: 90vh;
+        height: 100vh;
     }
 
     .title.quote {
@@ -920,7 +916,7 @@
     }
 
     .container.text-center {
-        padding-top: 50px;
+        padding-top: 0;
         width: 40%;
         font-size: 12px;
         padding-right: 10px;
@@ -944,7 +940,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 70vh;
+        height: 80vh;
         
     }
 
@@ -980,6 +976,7 @@
         padding: 10px 40px 10px 40px;
         background-color: #679C43;
         border: none;
+        margin-top: 20px
     }
 
     /* Feedback */
@@ -1237,12 +1234,6 @@
        
     }
 
-    /* Geral */
-    body {
-        background-color: blue;
-        padding: 10px;
-        
-    }
 
     /* Sessão de Imagens */
 
@@ -1259,8 +1250,9 @@
     }
 
     /* Sobre a empresa*/
+
     .about_us .container-fluid {
-        padding-top: 100px;
+        padding-top: 40px;
         height: 100vh;
         display: grid;
         text-align: center;
@@ -1346,7 +1338,7 @@
         color: #fff;
         font-size: 58px;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 50px;
     }
 
     .services span {
@@ -1399,7 +1391,6 @@
     .services .card-body {
         border-radius: 20px;
         background-color: #fff;
-        
         
     }
     
@@ -1486,7 +1477,7 @@
     }
 
     .title.quote {
-        padding-top: 110px;
+        padding-top: 20px;
         font-size: 52px;
         text-align: center;
         
@@ -1539,7 +1530,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 85vh;
+        height: 90vh;
         
     }
 
@@ -1564,6 +1555,7 @@
         padding: 10px 40px 10px 40px;
         background-color: #679C43;
         border: none;
+        margin-top: 20px
     }
 
     /* Feedback */
@@ -1589,7 +1581,7 @@
         text-align: center;
         font-size: 32px;
         margin: auto;
-        padding-top: 120px;
+        padding-top: 20px;
         color: #e7f1f3;
         padding-bottom: 20px;
     }
@@ -1814,13 +1806,6 @@
        
     }
 
-    /* Geral */
-    body {
-        background-color: yellow;
-        padding: 10px;
-        
-    }
-
     /* Sessão de Imagens */
 
     .img-fluid.first{
@@ -1912,7 +1897,7 @@
         background-color: #076DB5;
         display: flex;
         flex-direction: column;
-        height: 150vh;
+        height: 80rem;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -2063,7 +2048,7 @@
     }
 
     .title.quote {
-        padding-top: 110px;
+        padding-top: 90px;
         font-size: 52px;
         text-align: center;
         
@@ -2116,7 +2101,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 85vh;
+        height: 90vh;
         
     }
 
@@ -2134,7 +2119,8 @@
 
     .formulario_orcamento .btn.btn-primary.quote {
         text-align: center;
-        margin-left: 280px
+        margin-left: 260px;
+        margin-top: 20px;
     }
 
     .btn.btn-primary.quote {
@@ -2166,7 +2152,7 @@
         text-align: center;
         font-size: 42px;
         margin: auto;
-        padding-top: 130px;
+        padding-top: 110px;
         color: #e7f1f3;
         padding-bottom: 10px;
     }
@@ -2207,7 +2193,7 @@
     }
 
     .titulo_feedback {
-        padding-bottom: 30px;
+        padding-bottom: 0;
     }
 
     .rating {
@@ -2389,13 +2375,6 @@
        
     }
 
-    /* Geral */
-    body {
-        background-color: red;
-        padding: 10px;
-        
-    }
-
     /* Sessão de Imagens */
 
     .img-fluid.first{
@@ -2495,7 +2474,7 @@
         color: #fff;
         font-size: 58px;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 120px;
     }
 
     .services span {
@@ -2683,7 +2662,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 85vh;
+        height: 90vh;
        
     }
 
@@ -2727,7 +2706,7 @@
 
     .container-fluid.feedback {
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         align-items: center;
         display: grid;
         text-align: center;
@@ -2773,7 +2752,7 @@
     }
 
     .imagem_feedback {
-        width: 400px;
+        width: 280px;
     }
 
     .titulo_feedback {
@@ -2955,13 +2934,6 @@
         justify-content: space-around;
         font-size: 22px;
        
-    }
-
-    /* Geral */
-    body {
-        background-color: black;
-        padding: 10px;
-        
     }
 
     /* Sessão de Imagens */
@@ -3196,7 +3168,7 @@
 
     section#quote.quote {
         background-color: #679C43;
-        height: 120vh;
+        height: 140vh;
     }
 
     .title.quote {
@@ -3231,7 +3203,7 @@
         padding-top: 10px;
         width: 40%;
         font-size: 12px;
-        padding-right: 50px;
+        padding-right: 100px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -3247,7 +3219,7 @@
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
-        height: 85vh;
+        height: 100vh;
         padding: 15px;
         
     }
@@ -3285,7 +3257,7 @@
 
     .container-fluid.feedback {
         width: 100%;
-        height: 100vh;
+        height: 60rem;
         align-items: center;
         display: grid;
         text-align: center;
