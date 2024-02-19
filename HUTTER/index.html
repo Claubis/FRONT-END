@@ -123,7 +123,7 @@
             <section id="services" class="services"> <!-- Inicio do Services-->
                 <h1 class="titulo"> <span>A CLEAN</span> FOR EVERY NEED</h1>
                 
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="row row-cols-1 row-cols-md-2 g-4 remove-top-margin">
                     <div class="col">
                     <div class="card h-100">
                         <div class="card-body">
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 remove-down-margin">
                         <div class="card-body">
                             <i class="bi bi-6-circle"></i>
                             <h5 class="card-title">Event</h5>
@@ -337,7 +337,10 @@
                     </select>
                     </div>
                 </div>
-                    <button type="submit" class="btn btn-primary quote">Submit</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary quote text-center">Submit</button>
+                </div>
+                
                     </form>
                 </div> 
             </section> <!-- Fim do Quote -->
@@ -352,19 +355,21 @@
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             <h1 class="titulo_feedback">Customer feedback</h1>
                             
-                            <form id="feedbackForm" name="formulario_feedback" method="post" netlify>
+                            <form class="formulario_feedback" name="formulario_feedback" netlify>
                                 <div class="rating">
-                                    <input type="number" name="rating" hidden>
-                                    <i class='bx bx-star star' style="--i: 0;" id="star-0"></i>
-                                    <i class='bx bx-star star' style="--i: 0;" id="star-1"></i>
-                                    <i class='bx bx-star star' style="--i: 0;" id="star-2"></i>
-                                    <i class='bx bx-star star' style="--i: 0;" id="star-3"></i>
-                                    <i class='bx bx-star star' style="--i: 0;" id="star-4"></i>
+                                    <input type="number" name="rating" id="rating" hidden required>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-0" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-1" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-2" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-3" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-4" ></i>
                                 </div> <!-- Fim da div rating -->
-                                <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+
+                                <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." required></textarea>
+                                
                                 <div class="btn-group">
                                     <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
-                                    <button class="btn cancel">Return to Menu</button>
+                                    <button class="btn cancel">Cancel</button>
                                 </div> <!-- Fim da div btn-group -->
                             </form>
                         
@@ -392,8 +397,10 @@
                     <div class="row">
                         
                         <div class="col redes_sociais">
-                            <h1 class="footer_social_title"> Acompanhe nossa empresa nas redes sociais </h1>
-                            <h2 class="footer_social_sub_title">Fique por dentro das promoções, horários de funcionamento e novidades em primeira mão! </h2>
+                            <h1 class="footer_social_title"> Follow our company on social media platforms </h1>
+                            <h2 class="footer_social_sub_title"> Stay updated on promotions, opening hours, and latest news firsthand!
+
+                            </h2>
                             
                             <ul class="icons_rede_social">
                                 <li>
