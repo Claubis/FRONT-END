@@ -73,10 +73,10 @@
             </header> <!-- Fim do header -->
 
             <section id="home" class="about_us"> <!-- Inicio do About Us -->
-                <div class="container-fluid">
+                <div class="container-fluid company">
                     <div class="row principal">
                         <div class="col box_principal">
-                            <h1> Cleaning Services </h1>
+                            <h1 class="title_main"> Cleaning Services </h1>
                             <span class="about_us"> "care, attention and detail" </span>
                             <p> Our cleaning services are conducted with the same level of care and attention to detail as if we were cleaning our own homes, ensuring a thorough and meticulous cleaning experience for our clients. </p>
 
@@ -119,15 +119,16 @@
 
             <section id="services" class="services"> <!-- Inicio do Services-->
                 <h1> Our Services </h1>
-                <h2> Elevate your space with our impeccable cleaning solutions, where cleanliness meets perfection. </h2>
+                <h2> "Elevate your space with our impeccable cleaning solutions, where cleanliness meets perfection". </h2>
                 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                    <div class="col image_services">
                     <div class="card h-100">
                         <img src="ASSTES/imagem1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Regular</h5>
                         <p class="card-text">In the hustle and bustle of everyday life, it's easy to let household cleaning slide. That's why we're here to help keep your home fresh, organized, and inviting. Our regular cleaning services are designed to streamline your life and ensure you come home to an immaculate environment every time.</p>
+                        <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
                     </div>
@@ -137,6 +138,7 @@
                         <div class="card-body">
                         <h5 class="card-title"> Deep Cleaning </h5>
                         <p class="card-text">In the midst of life's demands, thorough cleaning often gets neglected. That's where we step in to provide a comprehensive solution. Our deep cleaning services go the extra mile, tackling every nook and cranny to restore your space to its pristine condition. Trust us to revitalize your home, leaving it spotless and refreshed.</p>
+                        <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
                     </div>
@@ -146,6 +148,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Mov Out</h5>
                         <p class="card-text">When it comes to moving, the last thing you need is the stress of cleaning. Whether you're moving in or out, we've got you covered. Our specialized move-in/move-out cleaning services ensure that your new space is fresh and welcoming or that you leave your previous home spotless. Trust us to handle the cleaning so you can focus on the excitement of your new journey.</p>
+                        <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
                     </div>
@@ -155,6 +158,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Residential</h5>
                         <p class="card-text">We understand the importance of first impressions and strive to make every stay memorable. Our meticulous cleaning ensures that your property is always guest-ready, leaving visitors impressed and eager to return. Trust us to maintain the cleanliness and charm of your Airbnb, so you can focus on providing a delightful experience for your guests.</p>
+                        <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
                     </div>
@@ -164,136 +168,160 @@
                         <div class="card-body">
                             <h5 class="card-title">Commercial</h5>
                             <p class="card-text">In the commercial realm, cleanliness is crucial. Our tailored services meet your business needs, ensuring professionalism and hygiene in every corner. With meticulous attention, we leave a positive impression on clients and employees. Trust us to maintain your commercial property, while you focus on core objectives.</p>
+                            <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="col">
-                            <img src="ASSTES/imagem8.png" alt="Bootstrap" width="250" height="150">
+                    <div class="col carrosel">
+                        <div class="row">
+                            <img src="ASSTES/Principal.png" alt="Bootstrap">
+                            <p>Our cleaning services are conducted with the same level of care and attention to detail as if we were cleaning our own homes, ensuring a thorough and meticulous cleaning experience for our clients.</p>
                         </div>
                     </div>
                 </div>
                 
-                <h2> Campo para as fotos dos serviços e do time </h2>
+                <h2 class="fotos_time"> Campo para as fotos dos serviços e do time </h2>
 
             </section> <!-- Fim do Services -->
 
             <section id="quote" class="quote"> <!-- Inicio do Quote -->
                 <div class="container quote">
-                    <h1 class="title quote"><span>Reques</span> your quote FREE</h1>
+                    <h1 class="title quote"><span>Reques</span> your quote <span class="free">FREE</span></h1>
                     <form class="formulario_orcamento">
-                    <div class="row">
-                        <div class="col">
-                        <label for="InputFirstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="InputFirstName" aria-describedby="name" placeholder="Your name is required" required>
-                        </div>
-                        <div class="col">
-                        <label for="InputLastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="InputLastName">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="Email" placeholder="Your email is required (name@example.com)" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Phone" class="form-label">Phone number</label>
-                        <input type="number" class="form-control" id="PhoneNumber" placeholder="Your phone number is required" required>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                        <label for="Zip" class="form-label">Zip Code</label>
-                        <input type="number" class="form-control" id="ZipCode" placeholder="Your zip code is required" required>
-                    </div>  
-                    <div class="col">
-                        <label for="InputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="InputAddress">
-                    </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="SquareFeet" class="form-label">Square feet of your property</label>
-                        <input type="number" class="form-control" id="SquareFeet">
-                    </div>
-                    <div class="mb-3">
-                        <label for="Textarea" class="form-label">Do you need any additional services?</label>
-                        <textarea class="form-control" id="Textarea" rows="2"></textarea>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>How many rooms?</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    </div>
-                    <div class="col">
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>What kind of cleaning?</option>
-                        <option value="1">Regular Cleanin</option>
-                        <option value="2">Deep Cleaning</option>
-                        <option value="3">Move in & Move Out</option>
-                        <option value="4">Commercial Cleaning</option>
-                        <option value="5">Vacation Home Cleaning</option>
-                        <option value="6">Event Cleaning</option>
-                    </select>
-                    </div>
-                    </div>
-            
-                    <div class="row">
-                    <div class="col">
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>How often?</option>
-                        <option value="1">Only Once</option>
-                        <option value="2">Weekly</option>
-                        <option value="3">Every two weeks</option>
-                        <option value="4">Once a month</option>
-                    </select>
-                    </div>
-                    <div class="col">
-                    <select class="form-select mb-sm-3" aria-label="Default select example">
-                        <option selected>Do you have pets</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
-                    </select>
-                    </div>
-                </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <label for="InputFirstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="InputFirstName" aria-describedby="name" placeholder="Required" required>
+                            </div> <!-- Fim div col -->
+                            <div class="col">
+                                <label for="InputLastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="InputLastName">
+                            </div> <!-- Fim div col -->
+                        </div> <!-- Fim div row -->
+                        
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Your email is required (name@example.com)" required>
+                        </div> <!-- Fim div mb-3 -->
+                        
+                        <div class="mb-3">
+                            <label for="Phone" class="form-label">Phone number</label>
+                            <input type="number" class="form-control" id="PhoneNumber" placeholder="Your phone number is required" required>
+                        </div> <!-- Fim div mb-3 -->
+                        
+                        <div class="row">
+                            <div class="col">
+                                <label for="Zip" class="form-label">Zip Code</label>
+                                <input type="number" class="form-control" id="ZipCode" placeholder="Required" required>
+                            </div> <!-- Fim div col -->
+                        
+                            <div class="col">
+                                <label for="InputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="InputAddress">
+                            </div> <!-- Fim div col -->
+                        </div> <!-- Fim div row -->
+                        
+                        <div class="mb-3">
+                            <label for="SquareFeet" class="form-label">Square feet of your property</label>
+                            <input type="number" class="form-control" id="SquareFeet">
+                        </div> <!-- Fim div mb-3 -->
+                        
+                        <div class="mb-3">
+                            <label for="Textarea" class="form-label">Do you need any additional services?</label>
+                            <textarea class="form-control" id="Textarea" rows="2"></textarea>
+                        </div> <!-- Fim div mb-3 -->
+
+                        <div class="row selecoes">
+                            <div class="col">
+                                <select class="form-select col" aria-label="Default select example">
+                                    <option selected>How many rooms?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div> <!-- Fim div col -->
+
+                        
+                            <div class="col">
+                                <select class="form-select col" aria-label="Default select example">
+                                    <option selected>What kind of cleaning?</option>
+                                    <option value="1">Regular Cleanin</option>
+                                    <option value="2">Deep Cleaning</option>
+                                    <option value="3">Move in & Move Out</option>
+                                    <option value="4">Commercial Cleaning</option>
+                                    <option value="5">Vacation Home Cleaning</option>
+                                    <option value="6">Event Cleaning</option>
+                                </select>
+                            </div> <!-- Fim div col -->
+                        
+                            <div class="col">
+                                <select class="form-select col" aria-label="Default select example">
+                                    <option selected>How often?</option>
+                                    <option value="1">Only Once</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="3">Every two weeks</option>
+                                    <option value="4">Once a month</option>
+                                </select>
+                            </div> <!-- Fim div col -->
+                            
+
+                            <div class="col">
+                                <select class="form-select col" aria-label="Default select example">
+                                    <option selected>Do you have pets</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div> <!-- Fim div col -->
+                        </div> <!-- Fim div row -->
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary quote">Submit</button>
+                        </div> <!-- Fim div text-center -->
                     </form>
                 </div> 
             </section> <!-- Fim do Quote -->
 
             <section id="feedback" class="feedback"> <!-- Inicio do Feedback -->
                 <div class="container-fluid feedback">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="row container_feedback">
                         <h1 class="titulo_feedback">Customer feedback</h1>
-                        <form id="feedbackForm" action="#">
-                            <div class="rating">
-                                <input type="number" name="rating" hidden>
-                                <i class='bx bx-star star' id="star-0"></i>
-                                <i class='bx bx-star star' id="star-1"></i>
-                                <i class='bx bx-star star' id="star-2"></i>
-                                <i class='bx bx-star star' id="star-3"></i>
-                                <i class='bx bx-star star' id="star-4"></i>
-                            </div> <!-- Fim da div rating -->
-                            <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
-                            <div class="btn-group">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                <button class="btn cancel">Return to Menu</button>
-                            </div> <!-- Fim da div btn-group -->
-                        </form>
-                    </div> <!-- Fim da div col-sm-6 mb-3 mb-sm-0 -->
-                    <div class="col-sm-3">
-                        <h1 class="feedbacks_textos"> Texto para falar sobre os feedbacks e também colocar os melhores que foram realizados. </h1>
-                    </div> <!-- Fim da div col-sm-6 -->
+                        <h2>Share your feedback with us and help us improve!</h2>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            
+                                <form id="feedbackForm" action="#">
+                                    <div class="rating">
+                                        <input type="number" name="rating" hidden>
+                                        <i class='bx bx-star star' id="star-0"></i>
+                                        <i class='bx bx-star star' id="star-1"></i>
+                                        <i class='bx bx-star star' id="star-2"></i>
+                                        <i class='bx bx-star star' id="star-3"></i>
+                                        <i class='bx bx-star star' id="star-4"></i>
+                                    </div> <!-- Fim da div rating -->
+                                    <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button class="btn cancel">Menu</button>
+                                    </div> <!-- Fim da div btn-group -->
+                                </form>
+                            
+                        </div> <!-- Fim da div col-sm-6 mb-3 mb-sm-0 -->
+                        
+                        <div class="row frase_feedback">
+                            <div class="col">
+                                <h3 class="feedbacks_textos">"We welcome your suggestions, compliments, and complaints as we strive to enhance our services and processes for you".</h3>
+                            </div>
+                                <img class="foto_mulher" src="ASSTES/Principal.png" alt="">
+                        </div>
                     
+                    </div>
                 </div> <!-- Fim da div container-fluid feedback -->
             </section> <!-- Fim do Feedback -->
 
@@ -301,8 +329,10 @@
                 <div class="container-fluid footer">
                     <div class="row align-items-center"> 
                         <div class="col redes_sociais">
-                            <p class="footer_social_title">Acompanhe nossa empresa nas redes sociais</p>
-                            <p class="footer_social_sub_title">Fique por dentro das promoções, horários de funcionamento e novidades em primeira mão!</p>
+
+                            <p class="footer_social_title">Follow our company on social media platforms</p>
+                            <p class="footer_social_sub_title">Stay updated on promotions, opening hours, and latest news firsthand!</p>
+                            
                             <ul class="icons_rede_social">
                                 <li>
                                     <a class="rede_social instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -325,45 +355,19 @@
                                 </li>
                             </ul>
                         </div> <!-- Fim da div col -->
-                
-                        
+                    
                         <div class="col footer">
                             <nav>
-                                <p class="footer_heading">Nossa empresa</p>
+                                <p class="footer_social_title">Contact</p>
                                 <ul>
-                
-                                        <li><a href="#">Sobre a empresa </a></li>
-                                        <li><a href="#">Como entrar em contato</a></li>
-                                        <li><a href="#">Região de atendimento</a></li>
-                                        <li><a href="#services">Serviços</a></li>
-                                        <li><a href="#">Horários de atendimento</a></li>
-                                </ul>
-                            </nav>
-                        </div> <!-- Fim da div col -->
-                        
-                        <div class="col footer">
-                            <nav>
-                                <p class="footer_heading">Serviços</p>
-                                <ul>
-                                    <li><a  href="#">Regular Cleaning</a></li>
-                                    <li><a  href="#">Deep Cleaning</a></li>
-                                    <li><a  href="#">Mov Out</a></li>
-                                    <li><a  href="#">Residential</a></li>
-                                    <li><a  href="#">Commercial</a></li>
-                                </ul>
-                            </nav>
-                        </div> <!-- Fim da div col -->
-                        
-                        <div class="col footer">
-                            <nav>
-                                <p class="footer_heading">Contato</p>
-                                <ul>
-                                    <li><a onclick="dataLayerMenuSubItem('Contato','Fale Conosco', 'clique_rodape');" href="#">Ligação: (206) 582 8894</a></li>
-                                    <li><a onclick="dataLayerMenuSubItem('Contato','Trabalhe Conosco', 'clique_rodape');" href="#">Mensagem: (206) 582 8894 </a></li>
+                                    <li><a onclick="dataLayerMenuSubItem('Contato','Fale Conosco', 'clique_rodape');" href="#">Call: (206) 582 8894</a></li>
+                                    <li><a onclick="dataLayerMenuSubItem('Contato','Trabalhe Conosco', 'clique_rodape');" href="#">Message: (206) 582 8894 </a></li>
                                     <li><a onclick="dataLayerMenuSubItem('Contato','Trabalhe Conosco', 'clique_rodape');" href="#">Mail: aguiarcleaningllc@gmail.com</a></li>
                                 </ul>
                             </nav>
                         </div> <!-- Fim da div col -->
+
+                        <p>&copy; <span id="currentYear"></span> 2024 - Aguiar Cleaning Service - Todos os direitos reservados.</p>
                     </div> <!-- Fim da div row align-items-center -->
                 </div> <!-- Fim da div container-fluid footer -->
             </footer> <!-- Fim do rodapé -->
