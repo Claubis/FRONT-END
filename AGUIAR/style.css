@@ -1,13 +1,81 @@
 /* Geral*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+
+:root {
+
+    /* Configuração para o menu */
+    --font-family-menu: Georgia, 'Times New Roman', Times, serif;
+    --font-size-menu-desktop: 24px;
+    --font-size-menu-tablet: 22px;
+    --font-size-menu-celular-medio: 18px;
+    --font-size-menu-celular-pequeno: 16px;
+
+    /* Configuração para os textos, começando do H1 até paragrafos. */
+    --font-family-titulo-pagina: Georgia, 'Times New Roman', Times, serif;
+    --font-family-subtitulo-pagina: Georgia, 'Times New Roman', Times, serif;
+    --font-family-titulos-boxs: Georgia, 'Times New Roman', Times, serif;
+    --font-family-paragrafos: 'Montserrat', sans-serif;
+    --font-family-spaan: 'Montserrat', sans-serif;
+    --font-family-frases-efeitos: 'Verdana', sans-serif;
+
+    /* Configuração para o tamanho das fontes */
+    --font-size-titulos: 48px; /* Tamanho dos títulos */
+    --font-size-subtitulos: 24px; /* Tamanho dos subtítulos */
+    --font-size-titulos-boxs: 18px; /* Tamanho dos títulos */
+    --font-size-paragrafos: 14px; /* Tamanho dos parágrafos */
+    --font-size-spaan: 18px; /* Tamanho dos elementos especiais */
+    --font-size-frases-efeitos: 20px; /* Tamanho das frases de efeito */
+
+    /* Configuração para as cores das sessões */
+    --backcolor-menu: #fff; /* Cor de fundo do menu */
+    --backcolor-primeira-sessao: #eff7f8; /* Cor de fundo da primeira sessão */
+    --backcolor-segunda-sessao: #e7f1f3; /* Cor de fundo da segunda sessão */
+    --backcolor-terceira-sessao: #cfe3e7; /* Cor de fundo da terceira sessão */
+    --backcolor-quarta-sessao: #b7d4da;; /* Cor de fundo da quarta sessão */
+    --backcolor-quinta-sessao: #FFFFFF; /* Cor de fundo da quinta sessão */
+    --backcolor-setima-sessao: #a0a0a0; /* Cor de fundo da sétima sessão */
+    --backcolor-boxs-sessao: #9fc6ce; /* Cor de fundo da primeira sessão */
+
+    /* Configuração para o espaçamento entre os textos e conteúdos */
+    --spacamento-um: 10px; 
+    --spacamento-dois: 20px;
+    --spacamento-tres: 30px; 
+
+    /* Configuração para as cores das fontes - Cinza */
+    --color-font-um: #3c3c3c;
+    --color-font-dois:#515151;
+    --color-font-tres:#666666;
+    --color-font-quatro:#8c8c8c;
+    --color-font-cinco:#b5b5b5;
+
+    /* Configuração para as cores das fontes - Azul */
+    --color-font-titulos: #666f88;
+    --color-font-subtitulos:#788199;
+    --color-font-titulos-boxs:#8990a2;
+    --color-font-paragrafos:#a3a8b7;
+    --color-font-span:#b5bac9;
+
+    /* Configuração para os estilos dos boões */
+    --cor-botao-primeiro: #9fc6ce; /* Cor principal do botão */
+    --cor-botao-primeiro-hover: #076DB5; /* Cor de hover do botão */
+    --cor-botao-font: #ffffff; /* Cor do texto do botão */
+
+    --cor-botao-secundario: #679C43; /* Cor principal do botão */
+    --cor-botao-secundario-hover: #076DB5; /* Cor de hover do botão */
+    --cor-botao-secundario-font: #ffffff; /* Cor do texto do botão */
+
+    --cor-botao-terceiro: #2F4263; /* Cor principal do botão */
+    --cor-botao-terceiro-hover: #076DB5; /* Cor de hover do botão */
+    --cor-botao-terceiro-font: #ffffff; /* Cor do texto do botão */
+}
+  
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
-
 
 
 /* Menu */
@@ -17,13 +85,12 @@
 }
 
 .container-fluid {
-    background-color: #ffffff;
+    background-color: var(--backcolor-menu);
 }
 
 .container-fluid .navbar-brand {
     padding-left: 50px;
 }
-
 
 /* Logo do menu */
 
@@ -46,8 +113,8 @@
 
     /* Sobre a empresa */
     .about_us .container-fluid {
-        padding-top: 50px;
-        height: 70rem;
+        padding-top: 30px;
+        height: 75rem;
         display: flex;
         text-align: center;
         background: #eff7f8;
@@ -69,7 +136,17 @@
         font-weight: bold;
         text-align: center;
         color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Georgia;
+        padding-bottom: 10px;
+    }
+
+    .about_us .container-fluid h2 {
+        padding-top: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: #2F4263;
+        font-family: Georgia;
     }
 
 
@@ -78,13 +155,16 @@
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
     }
     
     .about_us .container-fluid p{
         color: #2F4263;
         text-align: center;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         font-size: 14px;
+        padding-top: 10px;
     }
 
     .about_us .container-fluid ul {
@@ -112,6 +192,8 @@
     .btn_contact:hover{
         background-color: #076DB5;
     }
+
+    /* Bloco onde consta cidades e horários */
 
     .col.cidades {
         color: #fff;
@@ -152,6 +234,7 @@
         font-size: 14px;
         padding-top: 20px;
         font-weight: 700;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .about_us .container-fluid ul li {
@@ -180,8 +263,9 @@
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 50px;
         padding-bottom: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
 
@@ -191,6 +275,8 @@
         font-size: 16px;
         text-align: center;
         padding-bottom: 30px;
+        font-family: var(--font-family-body);
+        
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -244,7 +330,7 @@
 
 
     .title.quote {
-        padding-top: 50px;
+        padding-top: 20px;
         font-size: 24px;
         text-align: center;
         
@@ -254,7 +340,7 @@
         position: relative;
         display: inline-block;
         color: #fff;
-        padding-top: 30px;
+        padding-top: 100px;
     }
 
     .title.quote span.free {
@@ -367,7 +453,7 @@
 
     .container-fluid.feedback h1 {
         font-size: 32px;
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .container-fluid.feedback h2 {
@@ -602,10 +688,11 @@
 
     /* Sobre a empresa */
     .about_us .container-fluid {
-        height: 70rem;
+        height: 80rem;
         text-align: center;
         background: #eff7f8;
         align-items: center;
+        padding-top: 50px;
     }
 
     .container-fluid.company {
@@ -727,7 +814,7 @@
         background-color: #e7f1f3;
         display: flex;
         flex-direction: column;
-        height: 200rem;
+        height: 185rem;
     }
 
     .services h1 {
@@ -735,8 +822,9 @@
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 50px;
         padding-bottom: 30px;
+        font-family: var(--font-family-titulos);
     }
 
 
@@ -746,6 +834,7 @@
         font-size: 16px;
         text-align: center;
         padding-bottom: 30px;
+        margin: 10px;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -799,7 +888,7 @@
 
 
     .title.quote {
-        padding-top: 120px;
+        padding-top: 50px;
         font-size: 24px;
         text-align: center;
         
@@ -1158,7 +1247,7 @@
 
     /* Sobre a empresa */
     .about_us .container-fluid {
-        height: 50rem;
+        height: 60rem;
         text-align: center;
         background: #eff7f8;
         align-items: center;
@@ -1279,7 +1368,7 @@
         background-color: #e7f1f3;
         display: flex;
         flex-direction: column;
-        height: 130rem;
+        height: 120rem;
     }
 
     .services h1 {
@@ -1287,7 +1376,7 @@
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 50px;
         padding-bottom: 30px;
     }
 
@@ -1349,7 +1438,7 @@
 
     section#quote.quote {
         background-color: #cfe3e7;
-        height: 65rem;
+        height: 60rem;
         display: grid;
         flex-direction: column;
     }
@@ -1361,7 +1450,7 @@
 
 
     .title.quote {
-        padding-top: 120px;
+        padding-top: 10px;
         font-size: 32px;
         text-align: center;
         
@@ -1475,7 +1564,7 @@
 
     .container-fluid.feedback {
         width: 100%;
-        height: 60rem;
+        height: 50rem;
         align-items: center;
         display: grid;
         text-align: center;
@@ -1847,7 +1936,7 @@
 
     .services {
         background-color: #e7f1f3;
-        height: 90rem;
+        height: 85rem;
     }
 
     .services h1 {
@@ -1855,7 +1944,7 @@
         font-size: 42px;
         font-weight: bold;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 50px;
         padding-bottom: 30px;
     }
 
@@ -1863,7 +1952,7 @@
     .services h2 {
         color: black;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         margin: auto;
         padding-bottom: 30px;
@@ -1902,11 +1991,19 @@
     }
 
 
+
+    .img_cleaning {
+        width: 250px;
+        align-items: center;
+        
+    }
+
     .col.carrosel p {
         text-align: center;
         margin: auto;
         color: #25ABB7;
         padding: 10px;
+        
     }
 
     .fotos_time {
@@ -1923,19 +2020,19 @@
 
     section#quote.quote {
         background-color: #cfe3e7;
-        height: 65rem;
+        height: 60rem;
         display: grid;
         flex-direction: column;
     }
 
     .container, .container-sm {
         max-width: 100%;
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
 
     .title.quote {
-        padding-top: 80px;
+        padding-top: 30px;
         font-size: 32px;
         text-align: center;
         
@@ -2058,7 +2155,7 @@
 
     .container-fluid.feedback h1 {
         font-size: 32px;
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .container-fluid.feedback h2 {
@@ -2073,7 +2170,7 @@
         font-size: 24px;
         margin: auto;
         margin: 10px;
-        padding-top: 20px;
+        padding-top: 10px;
 
     }
 
@@ -2488,6 +2585,12 @@
         padding: 5px;
         margin: 0;
         
+    }
+
+    .img_cleaning {
+        width: 250px;
+        align-items: center;
+        padding-left: 60px;
     }
 
     /* Orçamento */
@@ -3062,6 +3165,12 @@
         
     }
 
+    .img_cleaning {
+        width: 350px;
+        align-items: center;
+        padding-left: 70px;
+    }
+
     /* Orçamento */
 
     section#quote.quote {
@@ -3122,9 +3231,9 @@
         font-size: 10px;
     }
 
-
+    /* Ajuste do formulário */
     .formulario_orcamento {
-        width: 100%;
+        width: 80%;
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
@@ -3427,14 +3536,17 @@
     /* Menu */
     .collapse.navbar-collapse {
         justify-content: space-around;
+        
     }
     
     .nav-link {
         text-align: left;
+        gap: 10px;
     }
 
     .collapse.navbar-collapse {
-        font-size: 18px;
+        font-size: var(--font-size-menu-desktop);
+        
     }
 
 
@@ -3442,9 +3554,11 @@
     .about_us .container-fluid {
         height: 100vh;
         text-align: center;
-        background: #eff7f8;
+        background: var(--backcolor-primeira-sessao);
         align-items: center;
+
     }
+
 
     .container-fluid.company {
         display: flex;
@@ -3456,30 +3570,43 @@
         margin: auto;
         align-items: center;
         width: 40rem;
+        
     }
 
     .about_us .container-fluid h1.title_main {
-        padding-top: 60px;
-        font-size: 32px;
-        font-weight: bold;
+        padding-top: 100px;
+        font-family: var(--font-family-titulos);
+        font-size: var(--font-size-titulos);
+        color: var(--color-font-um);
         text-align: center;
-        color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 20px;
+    }
+
+    .about_us .container-fluid h2 {
+        padding-top: 20px;
+        font-family: var(--font-family-subtitulos-pagina);
+        font-size: var(--font-size-subtitulos);
+        color: var(--color-font-um);
+        text-align: center;
     }
 
 
     .about_us .container-fluid span {
-        color: #2F4263;
-        font-size: 18px;
+        font-family: var(--font-family-spaan);
+        font-size: var(--font-size-spaan);
+        color: var(--color-font-tres);
         text-transform: uppercase;
         font-weight: 500;
+      
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        font-size: var(--font-size-paragrafos);
+        color: var(--color-font-tres);
         text-align: center;
         padding-bottom: 5px;
-        font-size: 14px;
+        padding-top: 20px;
     }
 
     .about_us .container-fluid ul {
@@ -3492,11 +3619,11 @@
     
     .btn_contact {
         padding: 8px 25px;
-        background-color: #9fc6ce;
+        background-color: var(--cor-botao-primeiro);
+        color:var(--cor-botao-font);
+        font-size: 14px;
         border: none;
         border-radius: 8px;
-        color:#fff;
-        font-size: 14px;
         font-weight: 400;
         cursor: pointer;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -3508,6 +3635,12 @@
         background-color: #076DB5;
     }
 
+    .container-fluid.company {
+        padding-left: 150px;
+    }
+
+    /* Primeiro box dentro do box de textos */
+
     .col.cidades {
         display: flex;
         color: #fff;
@@ -3517,6 +3650,7 @@
         justify-content: center;
         margin: auto;
         padding: 30px;
+        
         
     }
 
@@ -3553,7 +3687,7 @@
 
 
     img.image_principal {
-        width: 25rem;
+        width: 30rem;
         height: 30rem;
     }
 
@@ -3566,11 +3700,11 @@
 
     .services h1 {
         color: #25ABB7;
-        font-size: 42px;
-        font-weight: bold;
+        font-size: 48px;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 140px;
         padding-bottom: 20px;
+        font-family: var(--font-family-titulos);
     }
 
 
@@ -3633,6 +3767,12 @@
         
     }
 
+    .img_cleaning {
+        width: 400px;
+        align-items: center;
+        padding-left: 150px;
+    }
+
     /* Orçamento */
 
     section#quote.quote {
@@ -3693,9 +3833,10 @@
         font-size: 10px;
     }
 
+    /* Formulário */
 
     .formulario_orcamento {
-        width: 100%;
+        width: 80%;
         background-color: #fff;
         border-radius: 20px;
         margin: auto;
@@ -3752,6 +3893,7 @@
     }
 
 
+
     /* Feedback */
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -3771,7 +3913,7 @@
     }
 
     .container-fluid.feedback h1 {
-        font-size: 32px;
+        font-size: 48px;
         padding-top: 60px;
     }
 
@@ -3793,7 +3935,7 @@
 
     .row.frase_feedback {
         display: flex;
-        padding-top: 80px;
+        padding-top: 30px;
     }
 
     .foto_mulher {
@@ -3814,7 +3956,7 @@
     .row.container_feedback {
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 70%;
         margin: auto;
     }
 
@@ -3830,9 +3972,10 @@
 
     .titulo_feedback {
         padding-bottom: 10px;
-        font-size: 20px;
+        font-size: 32px;
         font-weight: bold;
         color: #25ABB7;
+        font-family: var(--font-family-titulos);
     }
 
     .rating {

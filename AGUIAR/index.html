@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Aguiar Cleaning</title>
     
     <!-- Link para o Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,7 +14,8 @@
     <!-- Link para os Icons -->
     <script src="https://kit.fontawesome.com/abe66973be.js" crossorigin="anonymous"></script>
 
-    <!-- Link para as fontes -->
+    <!-- Link para o JS -->
+    <script src="/script.js"></script>
 
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
@@ -57,8 +58,8 @@
                                       Contact
                                     </a>
                                     <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="tel:+2065828894">Call</a></li>
-                                      <li><a class="dropdown-item" href="sms:+2065828894">SMS</a></li>
+                                      <li><a class="dropdown-item" href="tel:+12065828894">Call</a></li>
+                                      <li><a class="dropdown-item" href="sms:+12065828894">SMS</a></li>
                                       <li><hr class="dropdown-divider"></li>
                                       <li><a class="dropdown-item" href="mailto:aguiarcleaningllc@gmail.com">E-mail</a></li>
                                     </ul>
@@ -79,6 +80,8 @@
                             <h1 class="title_main"> Cleaning Services </h1>
                             <span class="about_us"> "care, attention and detail" </span>
                             <p> Our cleaning services are conducted with the same level of care and attention to detail as if we were cleaning our own homes, ensuring a thorough and meticulous cleaning experience for our clients. </p>
+                            <h2>About Us</h2>
+                            <p>We're a family-owned company with excellent references and experience. We're committed to delivering great service within your budget. If you're looking for a cleaning company you can trust, please contact us.</p>
 
                             <a href="tel:+2065828894"> <button class="btn_contact">Contact us now </button></a>
                         </div>
@@ -87,7 +90,7 @@
                             <div class="col">
                                 <h1> Cities of operation </h1>
                                 <ul>
-                                    <li> North Bend, Issaquah, Samamish </li>
+                                    <li> North Bend, Issaquah, Sammamish </li>
                                     <li> Mercer Island, Redmond, Bellevue </li>
                                     <li> Kirkland, Woodinville, Bothel </li>
                                     <li> Snohomish, Edmonds, Lake Forest, Mukilteo </li>
@@ -124,7 +127,8 @@
                         <img src="ASSTES/imagem1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Regular</h5>
-                        <p class="card-text">In the hustle and bustle of everyday life, it's easy to let household cleaning slide. That's why we're here to help keep your home fresh, organized, and inviting. Our regular cleaning services are designed to streamline your life and ensure you come home to an immaculate environment every time.</p>
+                        <p class="card-text">In the hustle and bustle of everyday life, it's easy to let household cleaning slide. That's why we're here to help keep your home fresh, organized, and inviting. Our regular cleaning services are designed to streamline your life and ensure you come home to an immaculate environment every time.</p> <p class="card-text">We offer <span><strong>weekly, bi-weekly, and monthly</strong></span> cleaning options.</p>
+                        <p>Use your time for yourself!</p>
                         <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
@@ -153,12 +157,13 @@
                     <div class="card h-100">
                         <img src="ASSTES/imagem4.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Residential</h5>
-                        <p class="card-text">We understand the importance of first impressions and strive to make every stay memorable. Our meticulous cleaning ensures that your property is always guest-ready, leaving visitors impressed and eager to return. Trust us to maintain the cleanliness and charm of your Airbnb, so you can focus on providing a delightful experience for your guests.</p>
+                        <h5 class="card-title">Ocasional</h5>
+                        <p class="card-text">We understand the importance of first impressions and strive to make every stay memorable. Our meticulous cleaning ensures that your property is always guest-ready, leaving visitors impressed and eager to return. Trust us to maintain the cleanliness and charm of your residence, so you can focus on providing a delightful experience for your guests.</p>
                         <a href="#quote"> <button class="btn_contact servicos"> Request quote </button></a>
                         </div>
                     </div>
                     </div>
+
                     <div class="col">
                         <div class="card h-100">
                         <img src="ASSTES/imagem5.png" class="card-img-top" alt="...">
@@ -169,9 +174,10 @@
                         </div>
                         </div>
                     </div>
+
                     <div class="col carrosel">
-                        <div class="row">
-                            <img src="ASSTES/Principal.png" alt="Bootstrap">
+                        <div class="col align-items-center">
+                            <img class="img_cleaning" src="ASSTES/Principal.png" alt="Bootstrap">
                             <p>Our cleaning services are conducted with the same level of care and attention to detail as if we were cleaning our own homes, ensuring a thorough and meticulous cleaning experience for our clients.</p>
                         </div>
                     </div>
@@ -184,7 +190,7 @@
             <section id="quote" class="quote"> <!-- Inicio do Quote -->
                 <div class="container quote">
                     <h1 class="title quote"><span>Reques</span> your quote <span class="free">FREE</span></h1>
-                    <form class="formulario_orcamento">
+                    <form class="formulario_orcamento" name="formulario_orcamento" method="post" netlify>
                         
                         <div class="row">
                             <div class="col">
@@ -293,21 +299,23 @@
                         <h2>Share your feedback with us and help us improve!</h2>
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             
-                                <form id="feedbackForm" action="#">
-                                    <div class="rating">
-                                        <input type="number" name="rating" hidden>
-                                        <i class='bx bx-star star' id="star-0"></i>
-                                        <i class='bx bx-star star' id="star-1"></i>
-                                        <i class='bx bx-star star' id="star-2"></i>
-                                        <i class='bx bx-star star' id="star-3"></i>
-                                        <i class='bx bx-star star' id="star-4"></i>
-                                    </div> <!-- Fim da div rating -->
-                                    <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
-                                    <div class="btn-group">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button class="btn cancel">Menu</button>
-                                    </div> <!-- Fim da div btn-group -->
-                                </form>
+                            <form class="formulario_feedback" name="formulario_feedback" netlify>
+                                <div class="rating">
+                                    <input type="number" name="rating" id="rating" hidden required>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-0" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-1" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-2" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-3" ></i>
+                                    <i class='bx bx-star star' style="--i: 0;" id="star-4" ></i>
+                                </div> <!-- Fim da div rating -->
+
+                                <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." required></textarea>
+                                
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                                    <button class="btn cancel">Cancel</button>
+                                </div> <!-- Fim da div btn-group -->
+                            </form>
                             
                         </div> <!-- Fim da div col-sm-6 mb-3 mb-sm-0 -->
                         
@@ -340,11 +348,11 @@
                                 </li>
                     
                                 <li>
-                                    <a class="rede_social telefone" href="tel:+2065828894"><i class="fa-sharp fa-solid fa-phone-volume"></i></a>
+                                    <a class="rede_social telefone" href="tel:+12065828894"><i class="fa-sharp fa-solid fa-phone-volume"></i></a>
                                 </li>
                     
                                 <li>
-                                    <a class="rede_social sms" href="sms:+2065828894"><i class="fa-solid fa-comment-sms"></i></i></a>
+                                    <a class="rede_social sms" href="sms:+12065828894"><i class="fa-solid fa-comment-sms"></i></i></a>
                                 </li>
                     
                                 <li>
@@ -371,6 +379,9 @@
         </div> <!-- Fim da div container-fluid-->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- Link para o arquivo JavaScript-->
+        <script src="script.js"></script>
 
     </body> <!-- Fim do Body-->
 </html> <!-- Fim do HMTL-->
