@@ -3,20 +3,11 @@
 
 :root {
 
-    /* Configuração para o menu */
-    --font-family-menu: Georgia, 'Times New Roman', Times, sans-serif;
-    --font-size-menu-desktop: 24px;
-    --font-size-menu-tablet: 22px;
-    --font-size-menu-celular-medio: 18px;
-    --font-size-menu-celular-pequeno: 16px;
-
     /* Configuração para os textos, começando do H1 até paragrafos. */
-    --font-family-titulo-pagina: Georgia, 'Times New Roman', Times, sans-serif;
-    --font-family-subtitulo-pagina: Georgia, 'Times New Roman', Times, serif;
-    --font-family-titulos-boxs: Georgia, 'Times New Roman', Times, serif;
+    --font-family-titulo: Georgia, 'Times New Roman', Times, sans-serif;
     --font-family-paragrafos: 'Montserrat', sans-serif;
-    --font-family-spaan: 'Montserrat', sans-serif;
-    --font-family-frases-efeitos: 'Verdana', sans-serif;
+    --font-family-spaan: Segoe;
+    --font-family-frases: Brush Script MT, Brush Script Std, cursive;
 
     /* Configuração para o tamanho das fontes */
     --font-size-titulos: 48px; /* Tamanho dos títulos */
@@ -36,37 +27,27 @@
     --backcolor-setima-sessao: #a0a0a0; /* Cor de fundo da sétima sessão */
     --backcolor-boxs-sessao: #9fc6ce; /* Cor de fundo da primeira sessão */
 
-    /* Configuração para o espaçamento entre os textos e conteúdos */
-    --spacamento-um: 10px; 
-    --spacamento-dois: 20px;
-    --spacamento-tres: 30px; 
-
-    /* Configuração para as cores das fontes - Cinza */
+    /* Configuração para as cores das fontes - Azul */
     --color-font-um: #3c3c3c;
     --color-font-dois:#515151;
-    --color-font-tres:#666666;
-    --color-font-quatro:#8c8c8c;
-    --color-font-cinco:#b5b5b5;
-
-    /* Configuração para as cores das fontes - Azul */
-    --color-font-titulos: #666f88;
-    --color-font-subtitulos:#788199;
-    --color-font-titulos-boxs:#8990a2;
-    --color-font-paragrafos:#a3a8b7;
-    --color-font-span:#b5bac9;
+    --color-font-tres: #666f88;
+    --color-font-quatro:#788199;
+    --color-font-cinco:#8990a2;
+    --color-font-seis:#a3a8b7;
+    --color-font-sete:#b5bac9;
 
     /* Configuração para os estilos dos boões */
-    --cor-botao-primeiro: #9fc6ce; /* Cor principal do botão */
-    --cor-botao-primeiro-hover: #076DB5; /* Cor de hover do botão */
-    --cor-botao-font: #ffffff; /* Cor do texto do botão */
+    --cor-botao-primeiro: #9fc6ce;
+    --cor-botao-primeiro-hover: #076DB5;
+    --cor-botao-font: #ffffff; 
 
-    --cor-botao-secundario: #679C43; /* Cor principal do botão */
-    --cor-botao-secundario-hover: #076DB5; /* Cor de hover do botão */
-    --cor-botao-secundario-font: #ffffff; /* Cor do texto do botão */
+    --cor-botao-secundario: #679C43; 
+    --cor-botao-secundario-hover: #076DB5; 
+    --cor-botao-secundario-font: #ffffff; 
 
-    --cor-botao-terceiro: #2F4263; /* Cor principal do botão */
-    --cor-botao-terceiro-hover: #076DB5; /* Cor de hover do botão */
-    --cor-botao-terceiro-font: #ffffff; /* Cor do texto do botão */
+    --cor-botao-terceiro: #2F4263; 
+    --cor-botao-terceiro-hover: #076DB5; 
+    --cor-botao-terceiro-font: #ffffff; 
 }
   
 * {
@@ -139,6 +120,7 @@ text-decoration: none;
 cursor: pointer;
 }
   
+/* Responsividade*/
 
 @media (max-width: 376px) {
     
@@ -171,8 +153,8 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h1 {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         padding-top: 50px;
         font-size: 22px;
         font-weight: bold;
@@ -181,8 +163,8 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h2 {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         padding-top: 20px;
         font-size: 22px;
         font-weight: bold;
@@ -191,8 +173,8 @@ cursor: pointer;
 
 
     .about_us .container-fluid span {
-        font-family: var(--font-family-subtitulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-spaan);
+        color: var(--color-font-tres);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
@@ -298,12 +280,12 @@ cursor: pointer;
         background-color: #e7f1f3;
         display: flex;
         flex-direction: column;
-        height: 180rem;
+        height: 190rem;
     }
 
     .services h1 {
-        font-family: var(--font-family-titulos);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 32px;
         text-align: center;
         padding-top: 50px;
@@ -312,9 +294,9 @@ cursor: pointer;
 
 
     .services h2 {
-        font-family: var(--font-family-frases-efeitos);
+        font-family: var(--font-family-frases);
         color: var(--color-font-tres);
-        font-size: 16px;
+        font-size: 24px;
         text-align: center;
         padding-bottom: 30px;
         margin: 15px;
@@ -339,11 +321,14 @@ cursor: pointer;
     }
 
     .card-title {
+        font-family: var(--font-family-titulos);
+        font-size: 22px;
         font-weight: bold;
         color: #25ABB7;
     }
 
     .card-text {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -372,6 +357,7 @@ cursor: pointer;
 
 
     .title.quote {
+        font-family: var(--font-family-titulo);
         padding-top: 20px;
         font-size: 24px;
         text-align: center;
@@ -481,7 +467,6 @@ cursor: pointer;
 
     section .feedback {
         background-color: #b7d4da;
-
     }
 
     .container-fluid.feedback {
@@ -491,28 +476,6 @@ cursor: pointer;
         display: grid;
         text-align: center;
         justify-content: center;
-    }
-
-    .container-fluid.feedback h1 {
-        font-family: var(--font-family-titulo-pagina);
-        font-size: 28px;
-        padding-top: 50px;
-    }
-
-    .container-fluid.feedback h2 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-bottom: 30px;
-
-    }
-
-    .container-fluid.feedback h3 {
-        font-size: 12px;
-        margin: auto;
-        margin: 10px;
-        
-
     }
 
     .row.frase_feedback {
@@ -547,27 +510,27 @@ cursor: pointer;
         width: 100%;
         border-radius: .75rem;
         box-shadow: var(--shadow);
-        
     }
 
-
     .titulo_feedback {
-        font-family: var(--font-family-titulo-pagina);
-        padding-bottom: 10px;
-        font-size: 20px;
+        font-family: var(--font-family-titulo);
+        padding-top: 40px;
+        padding-bottom: 10px;   
+        font-size: 28px;
         font-weight: bold;
         color: #25ABB7;
     }
 
     .row.container_feedback h2 {
-        font-family: var(--font-family-subtitulo-pagina);
-        color: var(--color-font-subtitulos);
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        padding-bottom: 30px;
     }
 
     .row.frase_feedback h3 {
-        font-family: var(--font-family-frases-efeitos);
-        font-size: 14px;
-        color: var(--color-font-subtitulos);
+        font-family: var(--font-family-paragrafos);
+        font-size: 16px;
+        color: var(--color-font-dois);
     }
 
     .rating {
@@ -681,8 +644,8 @@ cursor: pointer;
 
 
     .footer_social_title {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-dois);
         font-size: 16px;
         font-weight: 600;
         padding-top: 50px;
@@ -691,15 +654,16 @@ cursor: pointer;
     }
 
     .footer_social_sub_title {
-        font-family: var(--font-family-frases-efeitos);
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
         text-align: center;
-        color: var(--color-font-subtitulos);
+        color: var(--color-font-um);
         
     }
 
 
     .col.footer nav {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -773,8 +737,8 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h1 {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         padding-top: 50px;
         font-size: 32px;
         font-weight: bold;
@@ -784,7 +748,7 @@ cursor: pointer;
 
 
     .col.box_principal span {
-        font-family: var(--font-family-frases-efeitos);
+        font-family: var(--font-family-paragrafos);
         color: var(--color-font-dois);
         font-size: 18px;
         text-transform: uppercase;
@@ -794,7 +758,7 @@ cursor: pointer;
 
     .about_us .container-fluid h2 {
         font-family: var(--font-family-titulos);
-        color: var(--color-font-titulos);
+        color: var(--color-font-um);
         font-size: 28px;
     }
     
@@ -866,7 +830,7 @@ cursor: pointer;
     }
     
     .col.cidades h1 {
-        font-family: var(--font-family-titulos-boxs);
+        font-family: var(--font-family-titulo);
         color: #fff;
         font-size: 18px;
         font-weight: 700;
@@ -891,12 +855,12 @@ cursor: pointer;
         background-color: #e7f1f3;
         display: flex;
         flex-direction: column;
-        height: 185rem;
+        height: 210rem;
     }
 
     .services h1 {
-        font-family: var(--font-family-titulos);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 32px;
         font-weight: bold;
         text-align: center;
@@ -906,9 +870,9 @@ cursor: pointer;
 
 
     .services h2 {
-        font-family: var(--font-family-subtitulo-pagina);
-        color: var(--color-font-titulos);
-        font-size: 16px;
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 28px;
         text-align: center;
         padding-bottom: 30px;
         margin: 20px;
@@ -932,12 +896,14 @@ cursor: pointer;
     }
 
     .card-title {
+        font-family: var(--font-family-titulo);
         font-weight: bold;
         color: #25ABB7;
     }
 
     .card-text {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 14px;
     }
 
     .col.carrosel {
@@ -1079,33 +1045,13 @@ cursor: pointer;
 
     .container-fluid.feedback {
         width: 100%;
-        height: 60rem;
+        height: 55rem;
         align-items: center;
         display: grid;
         text-align: center;
         justify-content: center;
     }
 
-    .container-fluid.feedback h1 {
-        font-size: 32px;
-        padding-top: 10px;
-    }
-
-    .container-fluid.feedback h2 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-bottom: 30px;
-
-    }
-
-    .container-fluid.feedback h3 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-top: 70px;
-
-    }
 
     .row.frase_feedback {
         display: flex;
@@ -1145,21 +1091,24 @@ cursor: pointer;
 
 
     .titulo_feedback {
-        padding-bottom: 10px;
-        font-size: 20px;
+        font-family: var(--font-family-titulo);
+        padding-bottom: 30px;
+        font-size: 28px;
         font-weight: bold;
         color: #25ABB7;
     }
 
     .row.container_feedback h2 {
-        font-family: var(--font-family-subtitulo-pagina);
-        color: var(--color-font-subtitulos);
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 28px;
+        padding-bottom: 20px;
     }
 
     .row.frase_feedback h3 {
-        font-family: var(--font-family-frases-efeitos);
+        font-family: var(--font-family-paragrafos);
         font-size: 18px;
-        color: var(--color-font-subtitulos);
+        color: var(--color-font-tres);
     }
 
     .rating {
@@ -1167,7 +1116,7 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 42px;
+        font-size: 48px;
         color: var(--yellow);
         margin-bottom: 2rem;
     }
@@ -1272,6 +1221,7 @@ cursor: pointer;
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo);
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -1280,9 +1230,9 @@ cursor: pointer;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
-        
+        font-family: var(--font-family-paragrafos);
     }
 
 
@@ -1357,8 +1307,8 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h1.title_main {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 32px;
         padding-top: 80px;
         font-weight: bold;
@@ -1368,8 +1318,8 @@ cursor: pointer;
 
 
     .about_us .container-fluid span {
-        font-family: var(--font-family-subtitulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-subtitulos);
+        color: var(--color-font-tres);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
@@ -1377,15 +1327,15 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h2 {
-        font-family: var(--font-family-titulo-pagina);
-        color: var(--color-font-titulos);
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-weight: bold;
         font-size: 32px;
     }
     
     .about_us .container-fluid p{
         font-family: var(--font-family-paragrafos);
-        color: var(--color-font-um);
+        color: var(--color-font-dois);
         text-align: center;
         padding-bottom: 5px;
         font-size: 14px;
@@ -1473,25 +1423,27 @@ cursor: pointer;
         background-color: #e7f1f3;
         display: flex;
         flex-direction: column;
-        height: 120rem;
+        height: 220rem;
     }
 
     .services h1 {
-        color: #25ABB7;
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 80px;
         padding-bottom: 30px;
     }
 
 
     .services h2 {
-        color: black;
-        text-transform: uppercase;
-        font-size: 16px;
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 32px;
         text-align: center;
         padding-bottom: 30px;
+        margin: 20px;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -1499,10 +1451,6 @@ cursor: pointer;
         padding: 0;
     }
 
-    .row-cols-1>* {
-        flex: 1;
-    
-    }
 
     .card-body{
         text-align: center;
@@ -1517,8 +1465,10 @@ cursor: pointer;
     }
 
     .card-title {
+        font-family: var(--font-family-titulo);
         font-weight: bold;
         color: #25ABB7;
+        font-size: 24px;
     }
 
     .card-text {
@@ -1669,32 +1619,11 @@ cursor: pointer;
 
     .container-fluid.feedback {
         width: 100%;
-        height: 50rem;
+        height: 60rem;
         align-items: center;
         display: grid;
         text-align: center;
         justify-content: center;
-    }
-
-    .container-fluid.feedback h1 {
-        font-size: 32px;
-        padding-top: 10px;
-    }
-
-    .container-fluid.feedback h2 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-bottom: 30px;
-
-    }
-
-    .container-fluid.feedback h3 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-top: 70px;
-
     }
 
     .row.frase_feedback {
@@ -1735,10 +1664,25 @@ cursor: pointer;
 
 
     .titulo_feedback {
-        padding-bottom: 10px;
-        font-size: 20px;
+        font-family: var(--font-family-titulo);
+        padding-bottom: 30px;
+        font-size: 42px;
         font-weight: bold;
         color: #25ABB7;
+    }
+
+    .row.container_feedback h2 {
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+
+    .row.container_feedback h3 {
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
+        font-size: 24px;
+        padding-top: 40px;
     }
 
     .rating {
@@ -1746,9 +1690,10 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 32px;
+        font-size: 48px;
         color: var(--yellow);
         margin-bottom: 2rem;
+        gap: 30px;
     }
     .rating .star {
         cursor: pointer;
@@ -1852,6 +1797,8 @@ cursor: pointer;
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -1860,9 +1807,10 @@ cursor: pointer;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 18px;
         text-align: center;
-        
+        padding-top: 30px;
     }
 
 
@@ -1872,14 +1820,14 @@ cursor: pointer;
 
     .icons_rede_social {
         justify-content: center;
-        gap: 5px;
+        gap: 40px;
         margin: auto;
         align-items: center;
         text-align: center;
     }
 
     .rede_social {
-        font-size: 24px;
+        font-size: 38px;
         
     }
 
@@ -1889,7 +1837,7 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         margin: auto;
-        gap: 15px;
+        gap: 40px;
 
     }
 
@@ -1901,7 +1849,7 @@ cursor: pointer;
 
     .col.footer nav ul li a {
         text-decoration: none;
-      
+        
     }
 }
 
@@ -1943,27 +1891,37 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h1.title_main {
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         padding-top: 60px;
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 20px;
+    }
+
+    .about_us .container-fluid h2 {
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
+        font-weight: bold;
     }
 
 
     .about_us .container-fluid span {
-        color: #2F4263;
+        font-family: var(--font-family-spaan);
+        color: var(--color-font-dois);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
         text-align: center;
         padding-bottom: 5px;
-        font-size: 14px;
+        font-size: 16px;
+        padding-top: 20px;
     }
 
     .about_us .container-fluid ul {
@@ -2026,13 +1984,15 @@ cursor: pointer;
     }
     
     .col.cidades h1 {
+        font-family: var(--font-family-titulo);
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
     }
 
     .about_us .container-fluid ul li {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 14px;
     }
 
 
@@ -2051,7 +2011,8 @@ cursor: pointer;
     }
 
     .services h1 {
-        color: #25ABB7;
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 42px;
         font-weight: bold;
         text-align: center;
@@ -2061,9 +2022,9 @@ cursor: pointer;
 
 
     .services h2 {
-        color: black;
-        text-transform: uppercase;
-        font-size: 14px;
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 38px;
         text-align: center;
         margin: auto;
         padding-bottom: 30px;
@@ -2092,12 +2053,15 @@ cursor: pointer;
     }
 
     .card-title {
+        font-family: var(--font-family-titulo);
+        font-size: 24px;
         font-weight: bold;
         color: #25ABB7;
-        font-size: 16px;
+        
     }
 
     .card-text {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -2264,26 +2228,6 @@ cursor: pointer;
         justify-content: center;
     }
 
-    .container-fluid.feedback h1 {
-        font-size: 32px;
-        padding-top: 50px;
-    }
-
-    .container-fluid.feedback h2 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-bottom: 30px;
-
-    }
-
-    .container-fluid.feedback h3 {
-        font-size: 24px;
-        margin: auto;
-        margin: 10px;
-        padding-top: 10px;
-
-    }
 
     .row.frase_feedback {
         display: flex;
@@ -2323,10 +2267,24 @@ cursor: pointer;
 
 
     .titulo_feedback {
+        font-family: var(--font-family-titulo);
         padding-bottom: 10px;
-        font-size: 20px;
+        font-size: 38px;
         font-weight: bold;
         color: #25ABB7;
+        padding-bottom: 20px;
+    }
+
+    .row.container_feedback h2 {
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 38px;
+        padding-bottom: 30px;
+    }
+
+    .row.container_feedback h3 {
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
     }
 
     .rating {
@@ -2334,9 +2292,10 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 48px;
+        font-size: 58px;
         color: var(--yellow);
         margin-bottom: 2rem;
+        gap: 30px;
     }
     .rating .star {
         cursor: pointer;
@@ -2439,6 +2398,7 @@ cursor: pointer;
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo);
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -2447,7 +2407,8 @@ cursor: pointer;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 18px;
         text-align: center;
         
     }
@@ -2476,7 +2437,7 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         margin: auto;
-        gap: 15px;
+        gap: 40px;
 
     }
 
@@ -2484,6 +2445,8 @@ cursor: pointer;
     ul {
         list-style-type: none;
         text-align: center;
+        font-family: var(--font-family-paragrafos);
+        font-size: 18px;
     }
 
     .col.footer nav ul li a {
@@ -2530,27 +2493,37 @@ cursor: pointer;
     }
 
     .about_us .container-fluid h1.title_main {
-        padding-top: 60px;
-        font-size: 32px;
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
+        padding-top: 100px;
+        font-size: 48px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 20px;
     }
 
 
     .about_us .container-fluid span {
-        color: #2F4263;
+        font-family: var(--font-family-subtitulos);
+        color: var(--color-font-dois);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
         text-align: center;
         padding-bottom: 5px;
-        font-size: 14px;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    .about_us .container-fluid h2 {
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
+        font-weight: bold;
     }
 
     .about_us .container-fluid ul {
@@ -2613,13 +2586,15 @@ cursor: pointer;
     }
     
     .col.cidades h1 {
+        font-family: var(--font-family-titulo);
         color: #fff;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 700;
     }
 
     .about_us .container-fluid ul li {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 14px;
     }
 
 
@@ -2632,25 +2607,26 @@ cursor: pointer;
 
     .services {
         background-color: #e7f1f3;
-        height: 80rem;
+        height: 90rem;
     }
 
     .services h1 {
-        color: #25ABB7;
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 42px;
         font-weight: bold;
         text-align: center;
-        padding-top: 150px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 
 
     .services h2 {
-        color: black;
-        text-transform: uppercase;
-        font-size: 16px;
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 38px;
         text-align: center;
-        margin: auto;
+        margin: 20px;
         padding-bottom: 30px;
     }
 
@@ -2677,13 +2653,15 @@ cursor: pointer;
     }
 
     .card-title {
+        font-family: var(--font-family-titulo);
         font-weight: bold;
         color: #25ABB7;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .card-text {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 14px;
     }
 
 
@@ -2710,11 +2688,16 @@ cursor: pointer;
         padding-left: 60px;
     }
 
+    .col.align-items-center p {
+        font-family: var(--font-family-paragrafos);
+        margin: 10px;
+    }
+
     /* Orçamento */
 
     section#quote.quote {
         background-color: #cfe3e7;
-        height: 65rem;
+        height: 60rem;
         display: grid;
         flex-direction: column;
     }
@@ -2726,7 +2709,6 @@ cursor: pointer;
 
 
     .title.quote {
-        padding-top: 80px;
         font-size: 32px;
         text-align: center;
         
@@ -2847,26 +2829,6 @@ cursor: pointer;
         justify-content: center;
     }
 
-    .container-fluid.feedback h1 {
-        font-size: 32px;
-        padding-top: 60px;
-    }
-
-    .container-fluid.feedback h2 {
-        font-size: 18px;
-        margin: auto;
-        margin: 10px;
-        padding-bottom: 30px;
-
-    }
-
-    .container-fluid.feedback h3 {
-        font-size: 24px;
-        margin: auto;
-        margin: 10px;
-        padding-top: 20px;
-
-    }
 
     .row.frase_feedback {
         display: flex;
@@ -2906,10 +2868,23 @@ cursor: pointer;
 
 
     .titulo_feedback {
-        padding-bottom: 10px;
-        font-size: 20px;
+        font-family: var(--font-family-titulo);
+        padding-bottom: 20px;
+        font-size: 42px;
         font-weight: bold;
         color: #25ABB7;
+    }
+
+    .row.container_feedback h2 {
+        font-family: var(--font-family-frases);
+        color: var(--color-font-tres);
+        font-size: 48px;
+        padding-bottom: 30px;
+    }
+
+    .row.container_feedback h3 {
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
     }
 
     .rating {
@@ -2917,9 +2892,10 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 48px;
+        font-size: 60px;
         color: var(--yellow);
         margin-bottom: 2rem;
+        gap: 50px;
     }
     .rating .star {
         cursor: pointer;
@@ -2993,6 +2969,13 @@ cursor: pointer;
         background: var(--light);
     }
 
+    /* Modal */
+
+    .section-modal {
+        display: none;
+    }
+
+
     /* Footer */
 
     .footer {
@@ -3016,6 +2999,8 @@ cursor: pointer;
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo);
+        color: var(--color-font-um);
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -3024,9 +3009,9 @@ cursor: pointer;
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-family: var(--font-family-paragrafos);
+        font-size: 18px;
         text-align: center;
-        
     }
 
 
@@ -3053,7 +3038,7 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         margin: auto;
-        gap: 15px;
+        gap: 50px;
 
     }
 
@@ -3065,7 +3050,8 @@ cursor: pointer;
 
     .col.footer nav ul li a {
         text-decoration: none;
-      
+        font-family: var(--font-family-paragrafos);
+        font-size: 18px;
     }
 
 }
