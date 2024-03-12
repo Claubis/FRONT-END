@@ -8,14 +8,8 @@
     <!-- Link para o Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- Link para o arquivo JavaScript-->
-    <script src="script.js"></script>
-
     <!-- Link para os Icons -->
     <script src="https://kit.fontawesome.com/abe66973be.js" crossorigin="anonymous"></script>
-
-    <!-- Link para o JS -->
-    <script src="/script.js"></script>
 
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
@@ -24,7 +18,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-    <body> <!-- Inicio do body -->
+    <body onload="exibirModal()"> <!-- Inicio do body -->
       
         <div class="container-fluid">
             <header> <!-- Inicio do header -->
@@ -77,9 +71,12 @@
                 <div class="container-fluid company">
                     <div class="row principal">
                         <div class="col box_principal">
+                            
                             <h1 class="title_main"> Cleaning Services </h1>
                             <span class="about_us"> "care, attention and detail" </span>
+                            
                             <p> Our cleaning services are conducted with the same level of care and attention to detail as if we were cleaning our own homes, ensuring a thorough and meticulous cleaning experience for our clients. </p>
+                            
                             <h2>About Us</h2>
                             <p>We're a family-owned company with excellent references and experience. We're committed to delivering great service within your budget. If you're looking for a cleaning company you can trust, please contact us.</p>
 
@@ -293,22 +290,30 @@
             </section> <!-- Fim do Quote -->
 
             <section id="feedback" class="feedback"> <!-- Inicio do Feedback -->
+                
                 <div class="container-fluid feedback">
+                    
                     <div class="row container_feedback">
-                        <h1 class="titulo_feedback">Customer feedback</h1>
+                        
+                        <h1 class="titulo_feedback">Customer Feedback</h1>
                         <h2>Share your feedback with us and help us improve!</h2>
+                        
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             
-                            <form class="formulario_feedback" name="formulario_feedback" netlify>
+                            <form class="formulario_feedback" name="formulario_feedback" id="feedbackFormId" netlify>
+                                
                                 <div class="rating">
+                                    
                                     <input type="number" name="rating" id="rating" hidden required>
+                                    
                                     <i class='bx bx-star star' style="--i: 0;" id="star-0" ></i>
                                     <i class='bx bx-star star' style="--i: 0;" id="star-1" ></i>
                                     <i class='bx bx-star star' style="--i: 0;" id="star-2" ></i>
                                     <i class='bx bx-star star' style="--i: 0;" id="star-3" ></i>
                                     <i class='bx bx-star star' style="--i: 0;" id="star-4" ></i>
+            
                                 </div> <!-- Fim da div rating -->
-
+            
                                 <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." required></textarea>
                                 
                                 <div class="btn-group">
@@ -329,6 +334,21 @@
                     </div>
                 </div> <!-- Fim da div container-fluid feedback -->
             </section> <!-- Fim do Feedback -->
+
+            <section class="section-modal"> <!-- Inicio do Modal -->
+                <!-- Botão para abrir o modal -->
+                <button id="openModalBtn">Abrir Modal</button>
+
+                <!-- O modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <i class="fa-solid fa-rectangle-xmark close" style="color: #ff000d;"></i>
+                        <h2>Promotion</h2>
+                        <p>Refer a friend, get a free oven or fridge cleaning!</p>
+                        <p>Refer a friend to our cleaning services, and once we complete the service for that individual, you will receive a complimentary cleaning for either your refrigerator or oven.</p>
+                    </div>
+                </div>
+            </section> <!-- Fim do Modal -->
 
             <footer class="footer"> <!-- Inicio do rodapé -->
                 <div class="container-fluid footer">
@@ -377,7 +397,7 @@
                 </div> <!-- Fim da div container-fluid footer -->
             </footer> <!-- Fim do rodapé -->
         </div> <!-- Fim da div container-fluid-->
-
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
         <!-- Link para o arquivo JavaScript-->

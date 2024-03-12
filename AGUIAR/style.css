@@ -1,18 +1,17 @@
 /* Geral*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-
 :root {
 
     /* Configuração para o menu */
-    --font-family-menu: Georgia, 'Times New Roman', Times, serif;
+    --font-family-menu: Georgia, 'Times New Roman', Times, sans-serif;
     --font-size-menu-desktop: 24px;
     --font-size-menu-tablet: 22px;
     --font-size-menu-celular-medio: 18px;
     --font-size-menu-celular-pequeno: 16px;
 
     /* Configuração para os textos, começando do H1 até paragrafos. */
-    --font-family-titulo-pagina: Georgia, 'Times New Roman', Times, serif;
+    --font-family-titulo-pagina: Georgia, 'Times New Roman', Times, sans-serif;
     --font-family-subtitulo-pagina: Georgia, 'Times New Roman', Times, serif;
     --font-family-titulos-boxs: Georgia, 'Times New Roman', Times, serif;
     --font-family-paragrafos: 'Montserrat', sans-serif;
@@ -70,13 +69,11 @@
     --cor-botao-terceiro-font: #ffffff; /* Cor do texto do botão */
 }
   
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /* Menu */
 
@@ -99,6 +96,50 @@
     height: 80px;
 }
 
+/* Estilo para esconder o modal por padrão */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 80px;
+    text-align: center;
+}
+  
+/* Conteúdo do modal */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+
+}
+  
+/* Estilo para fechar o modal */
+.fa-solid.fa-rectangle-xmark {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+padding-bottom: 20px;
+text-align: right;
+
+}
+  
+.fa-solid.fa-rectangle-xmark:hover,
+.fa-solid.fa-rectangle-xmark:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+  
+
 @media (max-width: 376px) {
     
     /* Menu */
@@ -109,7 +150,6 @@
     .nav-link {
         text-align: left;
     }
-
 
     /* Sobre a empresa */
     .about_us .container-fluid {
@@ -131,36 +171,37 @@
     }
 
     .about_us .container-fluid h1 {
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
         padding-top: 50px;
         font-size: 22px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Georgia;
         padding-bottom: 10px;
     }
 
     .about_us .container-fluid h2 {
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
         padding-top: 20px;
         font-size: 22px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Georgia;
     }
 
 
     .about_us .container-fluid span {
-        color: #2F4263;
+        font-family: var(--font-family-subtitulo-pagina);
+        color: var(--color-font-titulos);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
         padding-bottom: 10px;
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-dois);
         text-align: center;
         padding-bottom: 10px;
         font-size: 14px;
@@ -196,6 +237,7 @@
     /* Bloco onde consta cidades e horários */
 
     .col.cidades {
+        font-family: var(--font-family-paragrafos);
         color: #fff;
         background-color: #9fc6ce;
         border-radius: 15px;
@@ -230,14 +272,15 @@
     }
     
     .col.cidades h1 {
+        font-family: var(--font-family-titulos);
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 20px;
-        font-weight: 700;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
     }
 
     .about_us .container-fluid ul li {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -259,23 +302,22 @@
     }
 
     .services h1 {
-        color: #25ABB7;
+        font-family: var(--font-family-titulos);
+        color: var(--color-font-titulos);
         font-size: 32px;
-        font-weight: bold;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 30px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
 
     .services h2 {
-        color: black;
-        text-transform: uppercase;
+        font-family: var(--font-family-frases-efeitos);
+        color: var(--color-font-tres);
         font-size: 16px;
         text-align: center;
         padding-bottom: 30px;
-        font-family: var(--font-family-body);
+        margin: 15px;
         
     }
 
@@ -452,7 +494,8 @@
     }
 
     .container-fluid.feedback h1 {
-        font-size: 32px;
+        font-family: var(--font-family-titulo-pagina);
+        font-size: 28px;
         padding-top: 50px;
     }
 
@@ -509,10 +552,22 @@
 
 
     .titulo_feedback {
+        font-family: var(--font-family-titulo-pagina);
         padding-bottom: 10px;
         font-size: 20px;
         font-weight: bold;
         color: #25ABB7;
+    }
+
+    .row.container_feedback h2 {
+        font-family: var(--font-family-subtitulo-pagina);
+        color: var(--color-font-subtitulos);
+    }
+
+    .row.frase_feedback h3 {
+        font-family: var(--font-family-frases-efeitos);
+        font-size: 14px;
+        color: var(--color-font-subtitulos);
     }
 
     .rating {
@@ -520,7 +575,7 @@
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 32px;
+        font-size: 38px;
         color: var(--yellow);
         margin-bottom: 2rem;
     }
@@ -596,6 +651,12 @@
         background: var(--light);
     }
 
+    /* Modal */
+
+    .section-modal{
+        display: none;
+    }
+
     /* Footer */
 
     .footer {
@@ -620,6 +681,8 @@
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
         font-size: 16px;
         font-weight: 600;
         padding-top: 50px;
@@ -628,8 +691,10 @@
     }
 
     .footer_social_sub_title {
+        font-family: var(--font-family-frases-efeitos);
         font-size: 12px;
         text-align: center;
+        color: var(--color-font-subtitulos);
         
     }
 
@@ -688,7 +753,7 @@
 
     /* Sobre a empresa */
     .about_us .container-fluid {
-        height: 80rem;
+        height: 90rem;
         text-align: center;
         background: #eff7f8;
         align-items: center;
@@ -708,27 +773,38 @@
     }
 
     .about_us .container-fluid h1 {
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
         padding-top: 50px;
         font-size: 32px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 10px;
     }
 
 
-    .about_us .container-fluid span {
-        color: #2F4263;
+    .col.box_principal span {
+        font-family: var(--font-family-frases-efeitos);
+        color: var(--color-font-dois);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
+        padding-bottom: 50px;
+    }
+
+    .about_us .container-fluid h2 {
+        font-family: var(--font-family-titulos);
+        color: var(--color-font-titulos);
+        font-size: 28px;
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-tres);
         text-align: center;
         padding-bottom: 5px;
         font-size: 14px;
+        padding-top: 20px;
     }
 
     .about_us .container-fluid ul {
@@ -790,13 +866,14 @@
     }
     
     .col.cidades h1 {
+        font-family: var(--font-family-titulos-boxs);
         color: #fff;
-        font-size: 16px;
-        padding-top: 40px;
+        font-size: 18px;
         font-weight: 700;
     }
 
     .about_us .container-fluid ul li {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -818,23 +895,23 @@
     }
 
     .services h1 {
-        color: #25ABB7;
+        font-family: var(--font-family-titulos);
+        color: var(--color-font-titulos);
         font-size: 32px;
         font-weight: bold;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 30px;
-        font-family: var(--font-family-titulos);
     }
 
 
     .services h2 {
-        color: black;
-        text-transform: uppercase;
+        font-family: var(--font-family-subtitulo-pagina);
+        color: var(--color-font-titulos);
         font-size: 16px;
         text-align: center;
         padding-bottom: 30px;
-        margin: 10px;
+        margin: 20px;
     }
 
     .row.row-cols-1.row-cols-md-2.g-4 {
@@ -1074,12 +1151,23 @@
         color: #25ABB7;
     }
 
+    .row.container_feedback h2 {
+        font-family: var(--font-family-subtitulo-pagina);
+        color: var(--color-font-subtitulos);
+    }
+
+    .row.frase_feedback h3 {
+        font-family: var(--font-family-frases-efeitos);
+        font-size: 18px;
+        color: var(--color-font-subtitulos);
+    }
+
     .rating {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-gap: .5rem;
-        font-size: 32px;
+        font-size: 42px;
         color: var(--yellow);
         margin-bottom: 2rem;
     }
@@ -1155,6 +1243,11 @@
         background: var(--light);
     }
 
+    /* Modal */
+    .section-modal{
+        display: none;
+    }
+
     /* Footer */
 
     .footer {
@@ -1207,7 +1300,6 @@
 
     .rede_social {
         font-size: 24px;
-        
     }
 
     .container-fluid.footer ul.icons_rede_social {
@@ -1216,8 +1308,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-        gap: 15px;
-
+        gap: 30px;
     }
 
 
@@ -1266,27 +1357,39 @@
     }
 
     .about_us .container-fluid h1.title_main {
-        padding-top: 80px;
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
         font-size: 32px;
+        padding-top: 80px;
         font-weight: bold;
         text-align: center;
-        color: #2F4263;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       padding-bottom: 20px;
     }
 
 
     .about_us .container-fluid span {
-        color: #2F4263;
+        font-family: var(--font-family-subtitulo-pagina);
+        color: var(--color-font-titulos);
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 500;
+
+    }
+
+    .about_us .container-fluid h2 {
+        font-family: var(--font-family-titulo-pagina);
+        color: var(--color-font-titulos);
+        font-weight: bold;
+        font-size: 32px;
     }
     
     .about_us .container-fluid p{
-        color: #2F4263;
+        font-family: var(--font-family-paragrafos);
+        color: var(--color-font-um);
         text-align: center;
         padding-bottom: 5px;
         font-size: 14px;
+        padding-top: 20px;
     }
 
     .about_us .container-fluid ul {
@@ -1348,12 +1451,14 @@
     }
     
     .col.cidades h1 {
+        font-family: var(--font-family-titulos);
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
     }
 
     .about_us .container-fluid ul li {
+        font-family: var(--font-family-paragrafos);
         font-size: 12px;
     }
 
@@ -1715,6 +1820,12 @@
     
     .btn-group .btn.cancel:hover {
         background: var(--light);
+    }
+
+    /* Modal */
+
+    .section-modal {
+        display: none;
     }
 
     /* Footer */
@@ -2297,6 +2408,12 @@
     
     .btn-group .btn.cancel:hover {
         background: var(--light);
+    }
+
+    /* Modal */
+
+    .section-modal {
+        display: none;
     }
 
     /* Footer */
@@ -3533,6 +3650,11 @@
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
+    /* Occultar Modal*/
+    #openModalBtn{
+        display: none;
+    }
+
     /* Menu */
     .collapse.navbar-collapse {
         justify-content: space-around;
@@ -3892,8 +4014,6 @@
         
     }
 
-
-
     /* Feedback */
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -3966,7 +4086,6 @@
         width: 100%;
         border-radius: .75rem;
         box-shadow: var(--shadow);
-        
     }
 
 
@@ -4082,6 +4201,7 @@
 
 
     .footer_social_title {
+        font-family: var(--font-family-titulo-pagina);
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -4090,9 +4210,9 @@
     }
 
     .footer_social_sub_title {
-        font-size: 12px;
+        font-size: 18px;
         text-align: center;
-        
+        font-family: var(--font-family-frases-efeitos);
     }
 
 

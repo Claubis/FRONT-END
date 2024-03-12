@@ -50,3 +50,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// Obtém os elementos do DOM
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("openModalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+// Abre o modal quando o botão é clicado
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Fecha o modal quando o usuário clica no botão de fechar (x)
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Fecha o modal quando o usuário clica fora dele
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Função para exibir o modal
+function exibirModal() {
+	var modal = document.getElementById("myModal");
+	modal.style.display = "block";
+  }
+  
