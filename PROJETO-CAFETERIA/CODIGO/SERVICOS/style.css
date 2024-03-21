@@ -119,6 +119,7 @@ html {
 /* Títulos dos cards */
 
 .titulos-cards-servicos {
+    font-family: var(--font-family-padrao);
     text-align: center;
     font-size: 16px;
     padding-bottom: 10px;
@@ -128,4 +129,5 @@ html {
 
 .descricao-cards-servicos {
     font-size: 14px;
+    font-family: var(--font-family-padrao);
 }
