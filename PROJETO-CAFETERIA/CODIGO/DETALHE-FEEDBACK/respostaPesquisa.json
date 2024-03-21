@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nome": "Claudio Bispo",
+        "descricao":"Adorei o atendimento na cafeteira! Os funcionários foram super atenciosos e prestativos. Eles realmente se esforçaram para garantir que minha experiência fosse a melhor possível. Além disso, o ambiente era acolhedor e convidativo. Com certeza voltarei em breve!"
+    },
+
+    {
+        "id": 2,
+        "nome": "Sara Ingrid",
+        "descricao":"O atendimento na cafeteira foi ok. Os funcionários foram educados, mas pareciam um pouco distraídos. Não houve nada de extraordinário, mas também não tive grandes queixas. Talvez possam melhorar um pouco mais na rapidez e na atenção aos detalhes."
+    },
+
+    {
+        "id": 3,
+        "nome": "Patricia Naomi",
+        "descricao":"Fiquei bastante decepcionado com o atendimento na cafeteira. Os funcionários pareciam mal-humorados e pouco dispostos a ajudar. Além disso, meu pedido demorou uma eternidade para ser preparado, e quando finalmente recebi, estava errado. Esperava uma experiência melhor e mais eficiente."
+    },
+    {
+        "id": 3,
+        "nome": "Leo Gaspar",
+        "descricao":"Que lindo o atendimento, fiquei encantado com o novo produto de vocês."
+    }
+]
