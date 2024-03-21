@@ -1,0 +1,131 @@
+/* Importação da font que será utilizada no site todo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: beatifull;
+    src: url("../assets/fonts/font-padrao.otf");
+}
+
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+    --font-family-titulos: beatifull;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 64px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #000000;
+    --color-font-dois:#86674A;
+    --color-font-tres: #FFFFFF;
+    --color-font-quatro:#EEECDF;
+
+
+    /* Configuração para as cores das sessões */
+    --backcolor-primeira: #F8F6F6; 
+    --backcolor-segunda: #C6C3B7; 
+    --backcolor-terceira: #EEECDF; 
+    --backcolor-quarta: #88917B; 
+    --backcolor-quinta: #86674A; 
+}
+
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    overflow-x: hidden;
+}
+
+/* Ajuste no container geral da página */
+.container-servicos {
+    background-color: var(--backcolor-primeira);
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Título da página */
+.titulo-pagina-servicos {
+    font-family: var(--font-family-titulos);
+    font-size: 64px;
+    color: var(--color-font-um);
+    padding-bottom: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* Cards */
+.cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 60px;
+    margin: 0 auto; 
+}
+
+/* Ajuste no cartão individual */
+.service-card {
+    flex: 0 0 calc(30%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center; 
+    max-width: 320px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 360px;
+}
+
+/* Efeito hover */
+.service-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(200, 136, 90);
+    color: #ffffff;
+}
+
+/* Imagens */
+
+.imagem-cards-servico {
+    width: 100%;
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+/* Títulos dos cards */
+
+.titulos-cards-servicos {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/* Descrição dos cards */
+
+.descricao-cards-servicos {
+    font-size: 14px;
+}
