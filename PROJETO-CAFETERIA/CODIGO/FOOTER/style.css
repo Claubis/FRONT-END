@@ -113,7 +113,7 @@ footer {
 
 .botao-pagina-time {
     background-color: var(--backcolor-quarta);
-    color: var(--backcolor-quinta);
+    color: var(--backcolor-primeira);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -123,6 +123,9 @@ footer {
     display: block;
     margin-top: 20px;
     width: 200px;
+    font-family: var(--font-family-padrao);
+    font-weight: 600;
+    text-transform: uppercase;
 
 }
   

@@ -2,13 +2,13 @@
 /* Importação do CSS */
 import './style.css'
 
-/* Importação dos icones da rede social */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faPhoneVolume, faCommentSms, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faFacebook, faWhatsapp  } from '@fortawesome/free-brands-svg-icons';
-/* Instalar o módulo*/
-//npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
-
+/* Importação das imagens */
+import imagem1 from './assets/ligacao.png' /* Ligação */
+import imagem2 from './assets/chat.png' /* SMS */
+import imagem3 from './assets/mail.png' /* E-mail */
+import imagem4 from './assets/whats.png' /* Whats */
+import imagem5 from './assets/instagram.png' /* Instagram */
+import imagem6 from './assets/facebook.png' /* Facebook */
 
 
 import Link from 'next/link';
@@ -35,19 +35,19 @@ export default function Rodape(){
                     <div className='icones-contato-footer'>
                         <ul className='lista-icones-footer'>
                             <li>
-                                <a className="rede-social-telefone" href="tel:+11958757740"><FontAwesomeIcon className='icones-rede-social-font' icon={faPhoneVolume} /></a>
+                                <a className="rede-social-telefone" href="tel:+11958757740"><img className='icones-rede-social-font' src={imagem1.src} alt="Imagem de ligação" /></a>
                             </li>
 
                             <li>
-                                <a className="rede-social-sms" href="sms:+11958757740"><FontAwesomeIcon className='icones-rede-social-font' icon={faCommentSms} /></a>
+                                <a className="rede-social-sms" href="sms:+11958757740"> <img className='icones-rede-social-font' src={imagem2.src} alt="Imagem do SMS" /></a>
                             </li>
 
                             <li>
-                                <a className="rede-social-email" href="mailto:rm553472@fiap.com.br"><FontAwesomeIcon className='icones-rede-social-font' icon={faEnvelope} /></a>
+                                <a className="rede-social-email" href="mailto:rm553472@fiap.com.br"><img className='icones-rede-social-font' src={imagem3.src} alt="Imagem do e-mail" /></a>
                             </li>
 
                             <li>
-                                <a className="rede-social-whatsapp" href="https://wa.me/11958757740"><FontAwesomeIcon className='icones-rede-social-font' icon={faWhatsapp}/></a>
+                                <a className="rede-social-whatsapp" href="https://wa.me/11958757740"> <img className='icones-rede-social-font' src={imagem4.src} alt="Imagem do WhatsApp" /></a>
                             </li>
                         </ul>
                     </div> { /* Fim div icones-contato-footer */}
@@ -74,10 +74,10 @@ export default function Rodape(){
                         
                         <ul className='lista-icones-footer'>
                             <li>
-                                <a className="rede-social-instagram" href="#" target="_blank"><FontAwesomeIcon className='icones-rede-social-font' icon={faInstagram}/></a>
+                                <a className="rede-social-instagram" href="#" target="_blank"><img className='icones-rede-social-font' src={imagem5.src} alt="Imagem do Instagram" /></a>
                             </li>
                             <li>
-                                <a className="rede-social-facebook" href="#" target="_blank"><FontAwesomeIcon className='icones-rede-social-font' icon={faFacebook} /></a>
+                                <a className="rede-social-facebook" href="#" target="_blank"> <img className='icones-rede-social-font' src={imagem6.src} alt="Imagem do Facebook" /></a>
                             </li>
                         </ul>
 
