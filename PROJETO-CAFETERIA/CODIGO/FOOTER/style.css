@@ -69,6 +69,9 @@ footer {
 
 .footer-bottom {
     text-align: center;
+    font-family: var(--font-family-padrao);
+    font-size: 14px;
+    color: var(--color-font-um);
 }
 
 
@@ -77,11 +80,13 @@ footer {
 .lista-icones-footer {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .icones-rede-social-font {
     width: 30px;
     color: rgba(159, 94, 46, 1);
+    
 }
 
 

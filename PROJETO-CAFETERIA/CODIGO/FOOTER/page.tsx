@@ -102,7 +102,7 @@ export default function Rodape(){
             </div> { /* Fim div container-footer */}
 
             <div className="footer-bottom">
-                <p>&copy; 2024 WiskCafe. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Wiskafé. Todos os direitos reservados.</p>
             </div>  { /* Fim div footer-bottom */}    
         </footer>
 
