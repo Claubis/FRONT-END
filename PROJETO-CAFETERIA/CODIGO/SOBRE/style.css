@@ -1,0 +1,109 @@
+/* Importação da font que será utilizada no site todo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: beatifull;
+    src: url("../assets/fonts/font-padrao.otf");
+}
+
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+    --font-family-titulos: beatifull;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 64px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #000000;
+    --color-font-dois:#86674A;
+    --color-font-tres: #FFFFFF;
+    --color-font-quatro:#EEECDF;
+
+
+    /* Configuração para as cores das sessões */
+    --backcolor-primeira: #F8F6F6; 
+    --backcolor-segunda: #C6C3B7; 
+    --backcolor-terceira: #EEECDF; 
+    --backcolor-quarta: #88917B; 
+    --backcolor-quinta: #86674A; 
+}
+
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--backcolor-terceira);
+    align-items: center;
+}
+
+.container-info-sobre {
+    margin: 87px;
+    width: 70%;
+}
+
+/* Título da página */
+
+.titulo-pagina-sobre {
+    font-family: var(--font-family-titulos);
+    color: var(--color-font-um);
+    text-transform: uppercase;
+    font-weight: 200;
+    height: 73px;
+    font-size: 64px;
+    padding-bottom: 120px;
+}
+
+/* Descrição */
+
+.descricao-pagina-sobre {
+    font-family: var(--font-family-padrao);
+    font-size: 22px;
+    line-height: 200%;
+    text-wrap: wrap;
+}
+
+/* Botão de contato */
+.botao-pagina-sobre {
+    text-align: center;
+    width: 338px;
+    height: 55px;
+    border: 1px solid var(--backcolor-quinta);
+    color: var(--backcolor-quinta);
+    font-size: 24px;
+    text-transform: uppercase;
+    border-radius: 18px;
+    font-family: var(--font-family-padrao);
+}
+
+.botao-pagina-sobre:hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-5px); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    background-color: rgb(200, 136, 90);
+    color: #ffffff;
+}
