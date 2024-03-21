@@ -1,0 +1,75 @@
+
+/* Importação da font que será utilizada no site todo*/
+
+/* npm install next-google-fonts - Para instalar o módulo */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 18px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #3c3c3c;
+    --color-font-dois:#515151;
+    --color-font-tres: #666f88;
+    --color-font-quatro:#788199;
+    --color-font-cinco:#8990a2;
+    --color-font-seis:#a3a8b7;
+    --color-font-sete:#b5bac9;
+
+    /* Configuração para as cores das sessões */
+    --backcolor-basico: #f8f6f6; 
+    --backcolor-primeira-opcao: #E7F1F3; 
+    --backcolor-segunda-opcao: #CFE3E7; 
+    --backcolor-terceira-opcao: #B7D4DA; 
+    --backcolor-quarta-opcao: #9FC6CE; 
+    --backcolor-quinta-opcao: #9ad2dd; 
+}
+
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+}
+
+html {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; 
+    overflow-x: hidden; 
+}
+
+/* Ajuste no container Menu */
+
+.container-menu {
+    background-color: var(--backcolor-basico);
+    border: 5px solid black;
+}
+
+/* Ajuste no container geral da minha página */
+.container-orcamento {
+    background-color: var(--backcolor-quinta-opcao);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título da minha página */
+.titulo-orcamento {
+    color: var(--color-font-dois);
+}
