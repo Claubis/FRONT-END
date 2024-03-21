@@ -1,0 +1,101 @@
+/* Importação da font que será utilizada no site todo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: beatifull;
+    src: url("../assets/fonts/font-padrao.otf");
+    font-weight: normal;
+}
+
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+    --font-family-titulos: beatifull;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 64px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #000000;
+    --color-font-dois:#86674A;
+    --color-font-tres: #FFFFFF;
+    --color-font-quatro:#EEECDF;
+
+
+    /* Configuração para as cores das sessões */
+    --backcolor-primeira: #F8F6F6; 
+    --backcolor-segunda: #C6C3B7; 
+    --backcolor-terceira: #EEECDF; 
+    --backcolor-quarta: #88917B; 
+    --backcolor-quinta: #86674A; 
+}
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container-home-page {
+    background-color: var(--backcolor-segunda);
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    /*border: 5px solid blue;*/
+}
+
+/* Título da página */
+
+.titulo-home-page {
+    font-family: var(--font-family-titulos);
+    color: #463F22;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: var(--color-font-um);
+    padding-bottom: 47px;
+    line-height: 120%;
+    font-weight: 300;
+}
+
+/* Primeiro box - Onde constam as frases de Boas Vindas*/
+.container-info-primeiro-box {
+    /*border: 5px solid red;*/
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: center;
+
+}
+
+
+/* Segunda box - Onde consta a imagem */
+.imagem-seja-bem-vindo {
+    /*border: 5px solid green;*/
+    width: 559px;
+    height: 100%;
+    opacity: 80%;
+}
+
+/* Paragrafos */
+.frase-home-page {
+    font-family: var(--font-family-padrao);
+    font-size: 18px;
+    line-height: 170%;
+}
+
