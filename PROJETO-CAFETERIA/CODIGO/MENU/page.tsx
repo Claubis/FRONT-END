@@ -11,7 +11,7 @@ export default function Menu() {
         <div className='container-menu'>
 
             <div className='logo-pagina-menu'>
-                <h1 className='logo-projeto'>Wiskafé</h1>
+                <h1 className='logo-projeto'><Link className='logo-projeto' href="/">Wiskafé</Link></h1>
             </div> {/* Fim div logo-pagina-menu */}
 
             <div className='box-opcoes-menu'>
