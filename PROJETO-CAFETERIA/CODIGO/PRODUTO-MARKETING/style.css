@@ -1,0 +1,149 @@
+/* Importação da font que será utilizada no site todo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: beatifull;
+    src: url("../assets/fonts/font-padrao.otf");
+}
+
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+    --font-family-titulos: beatifull;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 64px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #000000;
+    --color-font-dois:#86674A;
+    --color-font-tres: #FFFFFF;
+    --color-font-quatro:#EEECDF;
+
+
+    /* Configuração para as cores das sessões */
+    --backcolor-primeira: #F8F6F6; 
+    --backcolor-segunda: #C6C3B7; 
+    --backcolor-terceira: #EEECDF; 
+    --backcolor-quarta: #88917B; 
+    --backcolor-quinta: #86674A; 
+}
+
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container-marketing-tres {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-info-marketing-tres {
+    position: relative;
+}
+
+
+.titulo-marketing-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 38px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%); 
+    left: 50px;
+}
+
+.frase-um-marketing-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 38px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%); 
+    left: 50px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.frase-dois-marketing-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 38px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 50px;
+}
+
+.frase-tres-marketing-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 38px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%); 
+    left: 50px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.frase-quatro-marketing-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 38px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%); 
+    left: 50px;
+}
+
+
+
+.nome-efeito-produto-tres {
+    font-family: var(--font-family-titulos);
+    font-size: 84px;
+    color: var(--color-font-um);
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%); 
+    left: 50px;
+    font-weight: 200;
+}
+
+.titulo-marketing-tres {
+    font-family: var(--font-family-titulos);
+}
+
+/* Imagem */
+.imagem-irish-coffe {
+    width: 1200px;
+    height: 100vh;
+    opacity: 80%;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+
