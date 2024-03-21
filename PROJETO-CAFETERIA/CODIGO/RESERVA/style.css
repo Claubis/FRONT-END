@@ -1,0 +1,168 @@
+/* Importação da font que será utilizada no site todo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: beatifull;
+    src: url("../assets/fonts/font-padrao.otf");
+}
+
+
+/* Padronização da fonte,a tamanho, cores, background*/
+:root {
+    /* Fontes - Familia */
+    --font-family-padrao: Manrope;
+    --font-family-titulos: beatifull;
+
+    /* Fontes - Tamanhos*/
+    --font-size-titulo-pagina: 64px;
+    --font-size-titulos-boxs:16px;
+    --font-size-textos: 14px;
+    --font-size-textos-pequenos: 12px;
+    --font-size-textos-sem-foco: 10px;
+
+    /* Fontes - Cores */
+    --color-font-um: #000000;
+    --color-font-dois:#86674A;
+    --color-font-tres: #FFFFFF;
+    --color-font-quatro:#EEECDF;
+
+    /* Configuração para as cores das sessões */
+    --backcolor-primeira: #F8F6F6; 
+    --backcolor-segunda: #C6C3B7; 
+    --backcolor-terceira: #EEECDF; 
+    --backcolor-quarta: #88917B; 
+    --backcolor-quinta: #86674A; 
+}
+/* Ajuste geral da página */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container-reserva {
+    background-color: #86674A;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 5px solid blue;*/
+}
+
+.container-info-reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* título da página */
+.titulo-pagina-principal-reserva {
+    font-family: var(--font-family-titulos);
+    font-size: 54px;
+    font-weight: 200;
+    color: var(--color-font-quatro);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.box-principal-reserva {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Conteúdo dentros do box de resreva */
+.box-conteudo-info-reserva { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    max-width: 600px;
+    
+}
+
+/* Texto da reserva */
+.titulo-box-reserva {
+    color: #EEECDF;
+    font-size: 18px;
+}
+
+.descricoes-reservas {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.descricao-reservas {
+    font-family: var(--font-family-padrao);
+    color: #EEECDF;
+    font-size: 18px;
+    padding-bottom: 30px;
+    line-height: 190%;
+}
+
+
+/* Estilo para o formulário de reservas */
+.reservas-form {
+    width: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #EEECDF;
+  }
+  
+  /* Estilo para os campos do formulário */
+  .reservas-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .reservas-form input[type="text"],
+  .reservas-form input[type="email"],
+  .reservas-form input[type="tel"],
+  .reservas-form input[type="date"],
+  .reservas-form input[type="time"],
+  .reservas-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+/* Estilo para o botão de envio */
+.reservas-form button[type="submit"] {
+    background-color: #E5E3D7;
+    color: #86674A;;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+  
+/* Estilo para o botão de envio ao passar o mouse */
+.reservas-form button[type="submit"]:hover {
+    background-color: #86674A;
+    color: #f9f9f9;
+}
+  
