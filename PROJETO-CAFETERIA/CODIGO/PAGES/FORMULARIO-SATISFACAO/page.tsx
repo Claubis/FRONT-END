@@ -78,9 +78,9 @@ export default function FeedbackForm({ onSubmit }: Props) {
 
                     <h1 className='titulo-form-pesquisa'>Pesquisa</h1>
                     
-                    <input type="text" value={nome} onChange={handleNameChange} placeholder="Seu nome" required />
+                    <input className='inputs-form-pesquisa' type="text" value={nome} onChange={handleNameChange} placeholder="Seu nome" required />
 
-                    <input type="text" value={emailOuTelefone} onChange={handleEmailOrPhoneChange} placeholder="E-mail ou telefone" required />
+                    <input className='inputs-form-pesquisa' type="text" value={emailOuTelefone} onChange={handleEmailOrPhoneChange} placeholder="E-mail ou telefone" required />
                     
 
                         <div className="rating-star">
@@ -101,7 +101,7 @@ export default function FeedbackForm({ onSubmit }: Props) {
                         </div>
                     
 
-                    <textarea name="opinion" value={opiniao} onChange={handleOpinionChange} placeholder="Sua opinião..." required></textarea>
+                    <textarea className='inputs-form-pesquisa' name="opinion" value={opiniao} onChange={handleOpinionChange} placeholder="Sua opinião..." required></textarea>
 
                     <div className="btn-group">
                         <button type="submit" className="btn-pesquisa-satisfacao" id="submitBtn">Enviar</button>

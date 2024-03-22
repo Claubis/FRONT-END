@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: beatifull;
-    src: url("../../assets/fonts/font-padrao.otf");
+    src: url("../assets/fonts/font-padrao.otf");
 }
 
 
@@ -202,4 +202,8 @@ html {
 .btn-pesquisa-satisfacao:hover {
     background-color: #807B66;
     color: #f9f9f9;
+}
+
+.inputs-form-pesquisa {
+    font-family: var(--font-family-padrao);
 }
